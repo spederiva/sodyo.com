@@ -1,1 +1,2443 @@
-sebastian
+<!doctype html>
+<html lang="en" class="no-js ">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Sodyo Home</title> 
+  <link rel="shortcut icon" href="images/favicon-16x16.png"> 
+  <meta name="description" content="We provide the next generation of interactive scanning tech that enables users to scan a small marker and be instantly connected to any actionable content."> 
+  <script>			
+      // init act obj
+			var act = {};
+      
+      // act vars
+      act.xs = 479;
+      act.sm = 767;
+      act.md = 1139;
+			
+			// Scroll offset
+			act.scroll_offset = {
+				sm: 66,
+				md: 66,
+				lg: 66,
+				get: function() {
+					if(window.matchMedia('(max-width: 767px)').matches) return act.scroll_offset.sm;
+					if(window.matchMedia('(min-width: 1140px)').matches) return act.scroll_offset.lg;
+					return act.scroll_offset.md;
+				},
+				set: function(sm, md, lg){
+					act.scroll_offset.sm = sm;
+					act.scroll_offset.md = md;
+					act.scroll_offset.lg = lg;
+				}
+			};
+		</script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+  <script>hsjQuery = window['jQuery'];</script> 
+  <meta property="og:description" content="We provide the next generation of interactive scanning tech that enables users to scan a small marker and be instantly connected to any actionable content."> 
+  <meta property="og:title" content="Sodyo Home"> 
+  <meta name="twitter:description" content="We provide the next generation of interactive scanning tech that enables users to scan a small marker and be instantly connected to any actionable content."> 
+  <meta name="twitter:title" content="Sodyo Home"> 
+  <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style> 
+  <link rel="stylesheet" href="css/main.min.css"> 
+  <link rel="stylesheet" href="css/child.css"> 
+  <link rel="stylesheet" href="css/components/nav.min.css"> 
+  <link rel="stylesheet" href="css/components/site-search.min.css"> 
+  <link rel="stylesheet" href="css/components/lang-select.min.css"> 
+  <link rel="stylesheet" href="css/components/mobile-nav.min.css"> 
+  <link rel="stylesheet" href="css/components/header-01.min.css"> 
+  <link rel="stylesheet" href="css/components/header-01-overlap.min.css"> 
+  <link rel="stylesheet" href="css/components/section-extra-settings.min.css"> 
+  <link rel="stylesheet" href="css/components/rich-text.min.css"> 
+  <link rel="stylesheet" href="css/components/scroll-to.min.css"> 
+  <link rel="stylesheet" href="css/components/box-over-image.min.css"> 
+  <style>
+      
+        #box_over_image_1646988769325 .box-over-image__box {
+          padding: 48px;
+        }
+      
+      
+        @media (max-width: 1139px) {
+          #box_over_image_1646988769325 .box-over-image__box {
+            padding: 36px;
+          } 
+        }
+      
+      
+        @media (max-width: 767px) {
+          #box_over_image_1646988769325 .box-over-image__box {
+            padding: 24px;
+          } 
+        }
+      
+    </style> 
+  <link rel="stylesheet" href="css/components/properties.min.css"> 
+  <link rel="stylesheet" href="css/components/section-intro.min.css"> 
+  <link rel="stylesheet" href="css/components/quick-features.min.css"> 
+  <link rel="stylesheet" href="css/components/image-box.min.css"> 
+  <link rel="stylesheet" href="css/components/splide.min.css"> 
+  <link rel="stylesheet" href="css/components/features-showcase.min.css"> 
+  <link rel="stylesheet" href="css/components/shifter.min.css"> 
+  <link rel="stylesheet" href="css/module_52445633067_icon.min.css"> 
+  <link rel="stylesheet" href="css/components/column-navigation.min.css"> 
+  <link rel="stylesheet" href="css/components/footer-11.min.css"> 
+  <!-- Editor Styles --> 
+  <style id="hs_editor_style" type="text/css">
+.content_bucket-row-2-max-width-section-centering > .row-fluid {
+  max-width: 1280px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* HubSpot Styles (default) */
+.content_bucket-row-1-padding {
+  padding-bottom: 48px !important;
+}
+.content_bucket-row-2-padding {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+</style> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi:regular|Andika:regular|Jost:regular,500,600&amp;display=swap"> 
+  <!--  Added by GoogleAnalytics integration --> 
+  <script>
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-107396836-1','auto');
+  ga('send','pageview');
+}}]);
+</script> 
+  <!-- /Added by GoogleAnalytics integration --> 
+  <link rel="canonical" href="../../../com/sodyo/www/index.html"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script>
+(function(b,c,e,f,g){f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src='https://www.overlayBI.com/snippet/'+e+'.js',g.parentNode.insertBefore(f,g)})(document,'script','107396836');
+</script> 
+  <meta property="og:image" content="https://www.sodyo.com/hubfs/Home%20Thumbnail.png#keepProtocol"> 
+  <meta property="og:image:width" content="2354"> 
+  <meta property="og:image:height" content="1378"> 
+  <meta name="twitter:image" content="https://www.sodyo.com/hubfs/Home%20Thumbnail.png#keepProtocol"> 
+  <meta property="og:url" content="https://www.sodyo.com"> 
+  <script>var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };</script> 
+  <meta name="twitter:card" content="summary_large_image"> 
+  <meta http-equiv="content-language" content="en"> 
+  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Promise,Object.assign,Element.prototype.closest"></script> 
+  <script nomodule src="js/ie.min.js"></script> 
+  <meta name="generator" content="HubSpot">
+ </head> 
+ <body class="  hs-content-id-68273465747 hs-site-page page "> 
+  <div id="top"></div> 
+  <div class="page"> 
+   <div data-global-resource-path="Act3 Sodyo/partials/header-01.html"> 
+    <header class="header header--1 header--overlap header--sticky header--w-search header--wo-lang hs-search-hidden"> 
+     <div class="header__sticky-wrapper"> 
+      <div class="header__sticky-element"> 
+       <div class="header__section header__section--main section"> 
+        <div class="header__center container"> 
+         <div class="row items-center"> 
+          <div class="col s2 md-s2 sm-s4 justify-center"> 
+           <div class="header__logo"> 
+            <div class="header__logo__static"> 
+             <div id="hs_cos_wrapper_static_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <span id="hs_cos_wrapper_static_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../../../com/sodyo/www/index.html" id="hs-link-static_header_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="images/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png" class="hs-image-widget " style="width:207px;border-width:0px;border:0px;" width="207" alt="Sodyo Logo" title="Sodyo Logo" srcset="images/trans%20logo%20new%20dec-18-1.png?width=104&amp;name=trans%20logo%20new%20dec-18-1.png 104w, images/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png 207w, images/trans%20logo%20new%20dec-18-1.png?width=311&amp;name=trans%20logo%20new%20dec-18-1.png 311w, images/trans%20logo%20new%20dec-18-1.png?width=414&amp;name=trans%20logo%20new%20dec-18-1.png 414w, images/trans%20logo%20new%20dec-18-1.png?width=518&amp;name=trans%20logo%20new%20dec-18-1.png 518w, images/trans%20logo%20new%20dec-18-1.png?width=621&amp;name=trans%20logo%20new%20dec-18-1.png 621w" sizes="(max-width: 207px) 100vw, 207px"></a></span> 
+             </div> 
+            </div> 
+            <div class="header__logo__overlap"> 
+             <div id="hs_cos_wrapper_overlapping_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <span id="hs_cos_wrapper_overlapping_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../../../com/sodyo/www/index.html" id="hs-link-overlapping_header_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="images/SODYO%20Logo%20Trans%20website%20june-18.png?width=266&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png" class="hs-image-widget " style="width:266px;border-width:0px;border:0px;" width="266" alt="SODYO Logo" title="SODYO Logo" srcset="images/SODYO%20Logo%20Trans%20website%20june-18.png?width=133&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 133w, images/SODYO%20Logo%20Trans%20website%20june-18.png?width=266&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 266w, images/SODYO%20Logo%20Trans%20website%20june-18.png?width=399&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 399w, images/SODYO%20Logo%20Trans%20website%20june-18.png?width=532&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 532w, images/SODYO%20Logo%20Trans%20website%20june-18.png?width=665&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 665w, images/SODYO%20Logo%20Trans%20website%20june-18.png?width=798&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 798w" sizes="(max-width: 266px) 100vw, 266px"></a></span> 
+             </div> 
+            </div> 
+            <div class="header__logo__sticky"> 
+             <div id="hs_cos_wrapper_sticky_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <span id="hs_cos_wrapper_sticky_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../../../com/sodyo/www/index.html" id="hs-link-sticky_header_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="images/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png" class="hs-image-widget " style="width:207px;border-width:0px;border:0px;" width="207" alt="Sodyo Logo" title="Sodyo Logo" srcset="images/trans%20logo%20new%20dec-18-1.png?width=104&amp;name=trans%20logo%20new%20dec-18-1.png 104w, images/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png 207w, images/trans%20logo%20new%20dec-18-1.png?width=311&amp;name=trans%20logo%20new%20dec-18-1.png 311w, images/trans%20logo%20new%20dec-18-1.png?width=414&amp;name=trans%20logo%20new%20dec-18-1.png 414w, images/trans%20logo%20new%20dec-18-1.png?width=518&amp;name=trans%20logo%20new%20dec-18-1.png 518w, images/trans%20logo%20new%20dec-18-1.png?width=621&amp;name=trans%20logo%20new%20dec-18-1.png 621w" sizes="(max-width: 207px) 100vw, 207px"></a></span> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="col s10 md-s10 sm-s8"> 
+           <div class="flex flex-row items-center justify-end no-shrink wrap"> 
+            <div class="header__nav"> 
+             <div id="hs_cos_wrapper_header_nav" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <style>
+    .module--header_nav {}
+    .module--header_nav .module__inner {}
+    @media (max-width: 1139px) {
+      .module--header_nav {}
+      .module--header_nav .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--header_nav {}
+      .module--header_nav .module__inner {}
+    }
+  </style> 
+              <div class="module module--header_nav module--nav"> 
+               <div class="module__inner"> 
+                <nav class="nav nav--light nav--on-hover hs-skip-lang-url-rewrite" flyout-delay="200" aria-label="Website"> 
+                 <ul class="nav__list nav__list--level1" role="menubar"> 
+                  <li class="nav__item nav__item--branch" role="none"> <a id="navlink_header_nav_1_1" class="nav__link" href="../../../com/sodyo/www/index.html" role="menuitem" aria-expanded="true">Resources</a> 
+                   <ul class="nav__list nav__list--level2 nav__list--flyout" role="menu"> 
+                    <li class="nav__item" role="none"> <a id="navlink_header_nav_2_1" class="nav__link" href="https://www.sodyo.com/blog" role="menuitem">Read our blog</a> </li> 
+                   </ul> </li> 
+                  <li class="nav__item nav__item--branch" role="none"> <a id="navlink_header_nav_1_2" class="nav__link" href="../../../com/sodyo/www/index.html" role="menuitem" aria-expanded="true">Company</a> 
+                   <ul class="nav__list nav__list--level2 nav__list--flyout" role="menu"> 
+                    <li class="nav__item" role="none"> <a id="navlink_header_nav_2_1" class="nav__link" href="https://www.sodyo.com/contact-us" role="menuitem">Contact Us</a> </li> 
+                   </ul> </li> 
+                 </ul> 
+                </nav> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="header__search"> 
+             <div id="hs_cos_wrapper_header_search" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <div id="header_search" class="site-search site-search--light txt--light"> 
+               <a href="../../../com/sodyo/www/index.html" class="site-search__open ui-icon" role="button" aria-label="Open search window"> 
+                <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                 <path d="M20.71 19.29L17.31 15.9C18.407 14.5025 19.0022 12.7767 19 11C19 9.41775 18.5308 7.87103 17.6518 6.55544C16.7727 5.23984 15.5233 4.21446 14.0615 3.60896C12.5997 3.00346 10.9911 2.84504 9.43928 3.15372C7.88743 3.4624 6.46197 4.22433 5.34315 5.34315C4.22433 6.46197 3.4624 7.88743 3.15372 9.43928C2.84504 10.9911 3.00347 12.5997 3.60897 14.0615C4.21447 15.5233 5.23985 16.7727 6.55544 17.6518C7.87103 18.5308 9.41775 19 11 19C12.7767 19.0022 14.5025 18.407 15.9 17.31L19.29 20.71C19.383 20.8037 19.4936 20.8781 19.6154 20.9289C19.7373 20.9797 19.868 21.0058 20 21.0058C20.132 21.0058 20.2627 20.9797 20.3846 20.9289C20.5064 20.8781 20.617 20.8037 20.71 20.71C20.8037 20.617 20.8781 20.5064 20.9289 20.3846C20.9797 20.2627 21.0058 20.132 21.0058 20C21.0058 19.868 20.9797 19.7373 20.9289 19.6154C20.8781 19.4936 20.8037 19.383 20.71 19.29ZM5 11C5 9.81331 5.3519 8.65327 6.01119 7.66658C6.67047 6.67988 7.60755 5.91085 8.7039 5.45672C9.80026 5.0026 11.0067 4.88378 12.1705 5.11529C13.3344 5.3468 14.4035 5.91824 15.2426 6.75736C16.0818 7.59647 16.6532 8.66557 16.8847 9.82946C17.1162 10.9933 16.9974 12.1997 16.5433 13.2961C16.0892 14.3925 15.3201 15.3295 14.3334 15.9888C13.3467 16.6481 12.1867 17 11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11Z" fill="currentColor" /> 
+                </svg> </a> 
+               <div class="site-search__popup"> 
+                <div class="site-search__bar"> 
+                 <form id="searchForm" class="site-search__form" autocomplete="off" results-zero-text="Sorry, no results found."> 
+                  <input class="site-search__input" id="searchInput" name="searchInput" type="text" placeholder="Search our website" title="Search our website"> 
+                  <input name="portalId" type="hidden" value="3890348"> 
+                  <input name="language" type="hidden" value=""> 
+                  <button class="site-search__submit ui-icon" type="submit" aria-label="Search"> 
+                   <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M20.71 19.29L17.31 15.9C18.407 14.5025 19.0022 12.7767 19 11C19 9.41775 18.5308 7.87103 17.6518 6.55544C16.7727 5.23984 15.5233 4.21446 14.0615 3.60896C12.5997 3.00346 10.9911 2.84504 9.43928 3.15372C7.88743 3.4624 6.46197 4.22433 5.34315 5.34315C4.22433 6.46197 3.4624 7.88743 3.15372 9.43928C2.84504 10.9911 3.00347 12.5997 3.60897 14.0615C4.21447 15.5233 5.23985 16.7727 6.55544 17.6518C7.87103 18.5308 9.41775 19 11 19C12.7767 19.0022 14.5025 18.407 15.9 17.31L19.29 20.71C19.383 20.8037 19.4936 20.8781 19.6154 20.9289C19.7373 20.9797 19.868 21.0058 20 21.0058C20.132 21.0058 20.2627 20.9797 20.3846 20.9289C20.5064 20.8781 20.617 20.8037 20.71 20.71C20.8037 20.617 20.8781 20.5064 20.9289 20.3846C20.9797 20.2627 21.0058 20.132 21.0058 20C21.0058 19.868 20.9797 19.7373 20.9289 19.6154C20.8781 19.4936 20.8037 19.383 20.71 19.29ZM5 11C5 9.81331 5.3519 8.65327 6.01119 7.66658C6.67047 6.67988 7.60755 5.91085 8.7039 5.45672C9.80026 5.0026 11.0067 4.88378 12.1705 5.11529C13.3344 5.3468 14.4035 5.91824 15.2426 6.75736C16.0818 7.59647 16.6532 8.66557 16.8847 9.82946C17.1162 10.9933 16.9974 12.1997 16.5433 13.2961C16.0892 14.3925 15.3201 15.3295 14.3334 15.9888C13.3467 16.6481 12.1867 17 11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11Z" fill="currentColor"></path> 
+                   </svg> </button> 
+                  <a href="../../../com/sodyo/www/index.html" class="site-search__close ui-icon" role="button" aria-label="Close search window"> 
+                   <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M20.707 4.707a1 1 0 0 0-1.414-1.414L12 10.586 4.707 3.293a1 1 0 0 0-1.414 1.414L10.586 12l-7.293 7.293a1 1 0 1 0 1.414 1.414L12 13.414l7.293 7.293a1 1 0 0 0 1.414-1.414L13.414 12l7.293-7.293z" fill="currentColor" /> 
+                   </svg> </a> 
+                 </form> 
+                </div> 
+                <div class="site-search__results"> 
+                 <div class="site-search__results-block"> 
+                  <div class="site-search__result-template"> 
+                   <div class="site-search__result-title ui-label"></div> 
+                   <div class="site-search__result-desc small-text"></div> 
+                  </div> 
+                  <button class="site-search__more btn btn--fill btn--medium btn--accent">More results</button> 
+                 </div> 
+                </div> 
+               </div> 
+              </div>
+             </div> 
+            </div> 
+            <div class="header__lang"> 
+             <div id="hs_cos_wrapper_header_lang" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <style>
+    .module--header_lang {}
+    .module--header_lang .module__inner {}
+    @media (max-width: 1139px) {
+      .module--header_lang {}
+      .module--header_lang .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--header_lang {}
+      .module--header_lang .module__inner {}
+    }
+  </style> 
+              <div class="module module--header_lang module--lang-select"> 
+               <div class="module__inner"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="header__buttons"> 
+             <div class="header__buttons__static"> 
+              <div id="hs_cos_wrapper_static_header_buttons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--static_header_buttons {}
+    .module--static_header_buttons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--static_header_buttons {}
+      .module--static_header_buttons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--static_header_buttons {}
+      .module--static_header_buttons .module__inner {}
+    }
+  </style> 
+               <div class="module module--static_header_buttons module--button"> 
+                <div class="module__inner"> 
+                 <div class="inline-items">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--static_header_buttons-1"> Try Sodyo </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+             <div class="header__buttons__overlap"> 
+              <div id="hs_cos_wrapper_overlapping_header_buttons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--overlapping_header_buttons {}
+    .module--overlapping_header_buttons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--overlapping_header_buttons {}
+      .module--overlapping_header_buttons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--overlapping_header_buttons {}
+      .module--overlapping_header_buttons .module__inner {}
+    }
+  </style> 
+               <div class="module module--overlapping_header_buttons module--button"> 
+                <div class="module__inner"> 
+                 <div class="inline-items">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--overlapping_header_buttons-1"> Try Sodyo </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+             <div class="header__buttons__sticky"> 
+              <div id="hs_cos_wrapper_sticky_header_buttons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--sticky_header_buttons {}
+    .module--sticky_header_buttons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--sticky_header_buttons {}
+      .module--sticky_header_buttons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--sticky_header_buttons {}
+      .module--sticky_header_buttons .module__inner {}
+    }
+  </style> 
+               <div class="module module--sticky_header_buttons module--button"> 
+                <div class="module__inner"> 
+                 <div class="inline-items">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--sticky_header_buttons-1"> Try Sodyo </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="header__mobile-nav"> 
+             <div id="hs_cos_wrapper_header_mobile_nav" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <style>
+    .module--header_mobile_nav {}
+    .module--header_mobile_nav .module__inner {}
+    @media (max-width: 1139px) {
+      .module--header_mobile_nav {}
+      .module--header_mobile_nav .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--header_mobile_nav {}
+      .module--header_mobile_nav .module__inner {}
+    }
+  </style> 
+              <div class="module module--header_mobile_nav module--mnav"> 
+               <div class="module__inner"> 
+                <div class="mnav mnav--light"> 
+                 <a class="mnav__open ui-icon" href="../../../com/sodyo/www/index.html" role="button" aria-label="Open menu"> 
+                  <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                   <path d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm1 5a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H4z" fill="currentColor" /> 
+                  </svg> </a> 
+                 <div class="mnav__overlay"></div> 
+                 <div class="mnav__popup"> 
+                  <div class="mnav__section mnav__section--first mnav__menu hs-skip-lang-url-rewrite"> 
+                   <ul class="mnav__menu__list mnav__menu__list--level1"> 
+                    <li class="mnav__menu__item mnav__menu__item--parent"> 
+                     <div class="mnav__menu__label"> 
+                      <a class="mnav__menu__link" href="../../../com/sodyo/www/index.html">Resources</a> 
+                      <div class="mnav__menu__toggle" role="button"> 
+                       <div class="mnav__menu__toggle__open-icon"> 
+                        <svg class="mnav__menu__toggle__open" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L12 13.5858L6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                       <div class="mnav__menu__toggle__close-icon"> 
+                        <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                      </div> 
+                     </div> 
+                     <ul class="mnav__menu__list mnav__menu__list--level2 mnav__menu__list--child"> 
+                      <li class="mnav__menu__item"> 
+                       <div class="mnav__menu__label"> 
+                        <a class="mnav__menu__link" href="https://www.sodyo.com/blog">Read our Blog</a> 
+                       </div> </li> 
+                     </ul> </li> 
+                    <li class="mnav__menu__item mnav__menu__item--parent"> 
+                     <div class="mnav__menu__label"> 
+                      <a class="mnav__menu__link" href="../../../com/sodyo/www/index.html">Company</a> 
+                      <div class="mnav__menu__toggle" role="button"> 
+                       <div class="mnav__menu__toggle__open-icon"> 
+                        <svg class="mnav__menu__toggle__open" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L12 13.5858L6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                       <div class="mnav__menu__toggle__close-icon"> 
+                        <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                      </div> 
+                     </div> 
+                     <ul class="mnav__menu__list mnav__menu__list--level2 mnav__menu__list--child"> 
+                      <li class="mnav__menu__item"> 
+                       <div class="mnav__menu__label"> 
+                        <a class="mnav__menu__link" href="https://www.sodyo.com/contact-us">Contact Us</a> 
+                       </div> </li> 
+                     </ul> </li> 
+                   </ul> 
+                  </div> 
+                  <div class="mnav__section mnav__buttons inline-items inline-items--left">
+                   <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--header_mobile_nav-1"> Try Sodyo </a>
+                  </div> 
+                  <a href="../../../com/sodyo/www/index.html" class="mnav__close ui-icon" role="button" aria-label="Open menu"> 
+                   <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M20.707 4.707a1 1 0 0 0-1.414-1.414L12 10.586 4.707 3.293a1 1 0 0 0-1.414 1.414L10.586 12l-7.293 7.293a1 1 0 1 0 1.414 1.414L12 13.414l7.293 7.293a1 1 0 0 0 1.414-1.414L13.414 12l7.293-7.293z" fill="currentColor" /> 
+                   </svg> </a> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </header> 
+   </div> 
+   <main id="main-content" class="body"> 
+    <div class="container-fluid main"> 
+     <div class="row-fluid-wrapper"> 
+      <div class="row-fluid"> 
+       <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12"> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-2" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <script>
+  var currentScript = document.currentScript || (function() {
+    var scripts = document.getElementsByTagName('script');
+    return scripts[scripts.length - 1];
+  })();
+  currentScript.closest('.dnd-section').classList.add('minh-full');
+</script> 
+               <div class="module--section-bg module--content_bucket-module-2"> 
+                <div class="section-bg__ui"></div> 
+                <div id="" class="section-bg section-bg--none section-bg--is-md section-bg--is-sm section-bg--top-border-none section-bg--bottom-border-none" section-class="minh-full" "> 
+                 <div class="section-bg__media section-bg__media--lg section-bg__video"> 
+                  <video src="https://3890348.fs1.hubspotusercontent-na1.net/hubfs/3890348/iStock-1295216890.mp4" autoplay playsinline muted loop width="1920" height="1080"></video> 
+                 </div> 
+                 <div class="section-bg__media section-bg__media--md section-bg__video"> 
+                  <video src="https://3890348.fs1.hubspotusercontent-na1.net/hubfs/3890348/iStock-1295216890.mp4" autoplay playsinline muted loop width="1920" height="1080"></video> 
+                 </div> 
+                 <div class="section-bg__media section-bg__media--sm section-bg__video"> 
+                  <video src="https://3890348.fs1.hubspotusercontent-na1.net/hubfs/3890348/iStock-1295216890.mp4" autoplay playsinline muted loop width="1920" height="1080"></video> 
+                 </div> 
+                 <div class="section-bg__overlay section-bg__overlay--dark" style="opacity: 0.50;"></div> 
+                </div> 
+               </div>
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-3" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-3 {}
+    .module--content_bucket-module-3 .module__inner {width: 850px;}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-3 {}
+      .module--content_bucket-module-3 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-3 {}
+      .module--content_bucket-module-3 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-3 module--heading module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="heading txt--dark"> 
+                  <h1 class="display">Sodyo is the Revolutionary Link between Linear and Digital</h1> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-4" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-4 {margin-bottom: 24px;}
+    .module--content_bucket-module-4 .module__inner {width: 570px;}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-4 {}
+      .module--content_bucket-module-4 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-4 {}
+      .module--content_bucket-module-4 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-4 module--rtext module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div id="rtext__content_bucket-module-4" class="rtext rtext--box-none txt--dark txt--dark"> 
+                  <div class="rtext__content clear normal-text"> 
+                   <p>We connect people with content and brands through non-intrusive, highly engaging and immersive experiences</p> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-5" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-5 {}
+    .module--content_bucket-module-5 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-5 {}
+      .module--content_bucket-module-5 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-5 {}
+      .module--content_bucket-module-5 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-5 module--button module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="inline-items inline-items--center">
+                  <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank" class="btn btn--fill btn--large btn--accent btn--default  btn--content_bucket-module-5-1"> Get Started </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-6" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-6 {margin-top: 48px;}
+    .module--content_bucket-module-6 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-6 {}
+      .module--content_bucket-module-6 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-6 {}
+      .module--content_bucket-module-6 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-6 module--scroll-to module--text-center"> 
+                <div class="module__inner"> 
+                 <a href="../../../com/sodyo/www/index.html" class="scroll-to scroll-to--ghost scroll-to--outline scroll-to--natural smooth-scroll" role="button"> <span class="screen-reader-text">Scroll</span> <span class="scroll-to__arrow"> 
+                   <svg width="11" height="8" viewbox="0 0 11 8" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M4.85127 6.94097L0.296352 2.38604C0.0766719 2.16636 0.0766719 1.8102 0.296352 1.59054L0.827609 1.05929C1.04691 0.839981 1.40234 0.839559 1.62216 1.05835L5.24902 4.66822L8.87586 1.05835C9.09568 0.839559 9.45111 0.839981 9.67041 1.05929L10.2017 1.59054C10.4214 1.81022 10.4214 2.16638 10.2017 2.38604L5.64678 6.94097C5.4271 7.16063 5.07095 7.16063 4.85127 6.94097Z" fill="currentColor" /> 
+                   </svg> </span> </a> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-7 content_bucket-row-1-padding dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-8 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-8" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <div class="module--section-bg module--content_bucket-module-8"> 
+                <div class="section-bg__ui"></div> 
+                <div id="customer-quote" class="section-bg section-bg--none section-bg--top-border-none section-bg--bottom-border-none" "> 
+                </div> 
+               </div>
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-9 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1646988769325" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1646988769325 {}
+    .module--1646988769325 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1646988769325 {}
+      .module--1646988769325 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1646988769325 {}
+      .module--1646988769325 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1646988769325 module--box-over-image"> 
+                <div class="module__inner"> 
+                 <div id="box_over_image_1646988769325" class="box-over-image box-over-image--align-right"> 
+                  <img src="images/couple-sofa-home-chill-couch-relationship-internet-smartphone-social-media-browsing_t20_e8xZYv-1.jpg?width=8688&amp;height=5792&amp;name=couple-sofa-home-chill-couch-relationship-internet-smartphone-social-media-browsing_t20_e8xZYv-1.jpg" alt="couple-sofa-home-chill-couch-relationship-internet-smartphone-social-media-browsing_t20_e8xZYv-1" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/couple-sofa-home-chill-couch-relationship-internet-smartphone-social-media-browsing_t20_e8xZYv-1.jpg?width=17376&amp;name=couple-sofa-home-chill-couch-relationship-internet-smartphone-social-media-browsing_t20_e8xZYv-1.jpg 17376w" width="8688" height="5792" loading="lazy" class="box-over-image__img"> 
+                  <div class="box-over-image__box clear box-over-image__box--accent box-over-image__box--shadow txt txt--dark"> 
+                   <h3>What We Do</h3> 
+                   <p><span>We provide users with fun, interactive experiences to enhance the way they watch TV, see advertisements, and shop while at the same time allowing broadcasters and brands to monetize the interaction.</span></p> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-10 content_bucket-row-2-padding dnd-section content_bucket-row-2-max-width-section-centering"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-11 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-11" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <div class="module--section-bg module--content_bucket-module-11"> 
+                <div class="section-bg__ui"></div> 
+                <div id="" class="section-bg section-bg--light section-bg--top-border-none section-bg--bottom-border-none" "> 
+                </div> 
+               </div>
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-12 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1647185780468" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1647185780468 {}
+    .module--1647185780468 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1647185780468 {}
+      .module--1647185780468 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1647185780468 {}
+      .module--1647185780468 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1647185780468 module--properties module--text-center module--md-text-center module--sm-text-center"> 
+                <div class="module__inner"> 
+                 <div class="properties properties--light "> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--1647185780468-1 icon--type-icon icon--small icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512" aria-hidden="true">
+                       <g id="Handshake1_layer">
+                        <path d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z" />
+                       </g>
+                      </svg> </span> </span> 
+                   </div> 
+                   <div class="properties__text  small-text">
+                    Engage
+                   </div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--1647185780468-2 icon--type-icon icon--small icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" aria-hidden="true">
+                       <g id="People Arrows2_layer">
+                        <path d="M96,128A64,64,0,1,0,32,64,64,64,0,0,0,96,128Zm0,176.08a44.11,44.11,0,0,1,13.64-32L181.77,204c1.65-1.55,3.77-2.31,5.61-3.57A63.91,63.91,0,0,0,128,160H64A64,64,0,0,0,0,224v96a32,32,0,0,0,32,32V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V383.61l-50.36-47.53A44.08,44.08,0,0,1,96,304.08ZM480,128a64,64,0,1,0-64-64A64,64,0,0,0,480,128Zm32,32H448a63.91,63.91,0,0,0-59.38,40.42c1.84,1.27,4,2,5.62,3.59l72.12,68.06a44.37,44.37,0,0,1,0,64L416,383.62V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V352a32,32,0,0,0,32-32V224A64,64,0,0,0,512,160ZM444.4,295.34l-72.12-68.06A12,12,0,0,0,352,236v36H224V236a12,12,0,0,0-20.28-8.73L131.6,295.34a12.4,12.4,0,0,0,0,17.47l72.12,68.07A12,12,0,0,0,224,372.14V336H352v36.14a12,12,0,0,0,20.28,8.74l72.12-68.07A12.4,12.4,0,0,0,444.4,295.34Z" />
+                       </g>
+                      </svg> </span> </span> 
+                   </div> 
+                   <div class="properties__text  small-text">
+                    Interact
+                   </div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--1647185780468-3 icon--type-code icon--small icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewbox="0 0 16 16"> 
+                       <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" /> 
+                       <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" />
+                      </svg> </span> </span> 
+                   </div> 
+                   <div class="properties__text  small-text">
+                    Personalize
+                   </div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--1647185780468-4 icon--type-icon icon--small icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 288 512" aria-hidden="true">
+                       <g id="Dollar Sign3_layer">
+                        <path d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z" />
+                       </g>
+                      </svg> </span> </span> 
+                   </div> 
+                   <div class="properties__text  small-text">
+                    Monetize
+                   </div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--1647185780468-5 icon--type-code icon--small icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewbox="0 0 16 16"> 
+                       <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                      </svg> </span> </span> 
+                   </div> 
+                   <div class="properties__text  small-text">
+                    Analyze
+                   </div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--1647185780468-6 icon--type-icon icon--small icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512" aria-hidden="true">
+                       <g id="Alternate File4_layer">
+                        <path d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z" />
+                       </g>
+                      </svg> </span> </span> 
+                   </div> 
+                   <div class="properties__text  small-text">
+                    Report
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-13 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-14 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1648031750366" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1648031750366 {margin-bottom: 48px;}
+    .module--1648031750366 .module__inner {width: 550px;}
+    @media (max-width: 1139px) {
+      .module--1648031750366 {}
+      .module--1648031750366 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1648031750366 {}
+      .module--1648031750366 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1648031750366 module--section-intro module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="section-intro section-intro--light txt--light"> 
+                  <div class="section-intro__overline">
+                   Our
+                  </div> 
+                  <div class="section-intro__title"> 
+                   <h2>State of the Art Scanning Technology</h2> 
+                  </div> 
+                  <div class="section-intro__desc"> 
+                   <div class="section-intro__desc-inner clear"> 
+                    <p>provides properties unachievable with any other technology:</p> 
+                   </div> 
+                  </div> 
+                  <div class="section-intro__divider section-intro__divider--auto">
+                   <div></div>
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-15 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1647187313283" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1647187313283 {}
+    .module--1647187313283 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1647187313283 {}
+      .module--1647187313283 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1647187313283 {}
+      .module--1647187313283 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1647187313283 module--quickfeat"> 
+                <div class="module__inner"> 
+                 <div class="quickfeat quickfeat--light txt--light txt--unstyle-links"> 
+                  <div class="row items-stretch justify-center"> 
+                   <div class="col s4 md-s6 sm-s12"> 
+                    <div class="quickfeat__item" style="margin-bottom: 48px;"> 
+                     <div class="quickfeat__icon"> 
+                      <span class="icon icon--1647187313283-1 icon--type-icon icon--large icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512" aria-hidden="true">
+                         <g id="Alternate Map Marker1_layer">
+                          <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                         </g>
+                        </svg> </span> </span> 
+                     </div>
+                     <div class="quickfeat__text" style="padding-inline-start: 24px;padding-inline-end: 48px;"> 
+                      <h4 class="quickfeat__title">Scan from Long Distances</h4> 
+                      <div class="quickfeat__desc clear small-text">
+                       Scan from 15x farther than a QR code - if you can see it, you can scan it.
+                      </div> 
+                     </div> 
+                     <span class="screen-reader-text">Scan from Long Distances</span> 
+                    </div> 
+                   </div> 
+                   <div class="col s4 md-s6 sm-s12"> 
+                    <div class="quickfeat__item" style="margin-bottom: 48px;"> 
+                     <div class="quickfeat__icon"> 
+                      <span class="icon icon--1647187313283-2 icon--type-icon icon--large icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-hidden="true">
+                         <g id="Alternate Compress2_layer">
+                          <path d="M4.686 427.314L104 328l-32.922-31.029C55.958 281.851 66.666 256 88.048 256h112C213.303 256 224 266.745 224 280v112c0 21.382-25.803 32.09-40.922 16.971L152 376l-99.314 99.314c-6.248 6.248-16.379 6.248-22.627 0L4.686 449.941c-6.248-6.248-6.248-16.379 0-22.627zM443.314 84.686L344 184l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C234.697 256 224 245.255 224 232V120c0-21.382 25.803-32.09 40.922-16.971L296 136l99.314-99.314c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.248 6.248 6.248 16.379 0 22.627z" />
+                         </g>
+                        </svg> </span> </span> 
+                     </div>
+                     <div class="quickfeat__text" style="padding-inline-start: 24px;padding-inline-end: 48px;"> 
+                      <h4 class="quickfeat__title">Smaller Code</h4> 
+                      <div class="quickfeat__desc clear small-text">
+                       The size of the code on the screen can be up to 15x smaller than a QR code.
+                      </div> 
+                     </div> 
+                     <span class="screen-reader-text">Smaller Code</span> 
+                    </div> 
+                   </div> 
+                   <div class="col s4 md-s6 sm-s12"> 
+                    <div class="quickfeat__item" style="margin-bottom: 48px;"> 
+                     <div class="quickfeat__icon"> 
+                      <span class="icon icon--1647187313283-3 icon--type-icon icon--large icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 320 512" aria-hidden="true">
+                         <g id="Lightning Bolt3_layer">
+                          <path d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z" />
+                         </g>
+                        </svg> </span> </span> 
+                     </div>
+                     <div class="quickfeat__text" style="padding-inline-start: 24px;padding-inline-end: 48px;"> 
+                      <h4 class="quickfeat__title">User Experience</h4> 
+                      <div class="quickfeat__desc clear small-text">
+                       <span>Lightning fast with an amazing user experience</span>.
+                      </div> 
+                     </div> 
+                     <span class="screen-reader-text">User Experience</span> 
+                    </div> 
+                   </div> 
+                   <div class="col s4 md-s6 sm-s12"> 
+                    <div class="quickfeat__item" style="margin-bottom: 48px;"> 
+                     <div class="quickfeat__icon"> 
+                      <span class="icon icon--1647187313283-4 icon--type-icon icon--large icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                         <g id="Shapes4_layer">
+                          <path d="M128,256A128,128,0,1,0,256,384,128,128,0,0,0,128,256Zm379-54.86L400.07,18.29a37.26,37.26,0,0,0-64.14,0L229,201.14C214.76,225.52,232.58,256,261.09,256H474.91C503.42,256,521.24,225.52,507,201.14ZM480,288H320a32,32,0,0,0-32,32V480a32,32,0,0,0,32,32H480a32,32,0,0,0,32-32V320A32,32,0,0,0,480,288Z" />
+                         </g>
+                        </svg> </span> </span> 
+                     </div>
+                     <div class="quickfeat__text" style="padding-inline-start: 24px;padding-inline-end: 48px;"> 
+                      <h4 class="quickfeat__title">Shaped Markers</h4> 
+                      <div class="quickfeat__desc clear small-text">
+                       No boring squares here! Our markers can be customized into many shapes to fit your branding needs. Check out some examples at our 
+                       <a href="/try-sodyo?hsLang=en" rel="noopener" target="_blank">Try Me Page.</a>
+                      </div> 
+                     </div> 
+                     <span class="screen-reader-text">Shaped Markers</span> 
+                    </div> 
+                   </div> 
+                   <div class="col s4 md-s6 sm-s12"> 
+                    <div class="quickfeat__item" style="margin-bottom: 48px;"> 
+                     <div class="quickfeat__icon"> 
+                      <span class="icon icon--1647187313283-5 icon--type-icon icon--large icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-hidden="true">
+                         <g id="lock5_layer">
+                          <path d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z" />
+                         </g>
+                        </svg> </span> </span> 
+                     </div>
+                     <div class="quickfeat__text" style="padding-inline-start: 24px;padding-inline-end: 48px;"> 
+                      <h4 class="quickfeat__title">Safe &amp; Secure</h4> 
+                      <div class="quickfeat__desc clear small-text">
+                       <span>We bring one of the most secure solutions on the market to you with a tamper-proof code and secure solution</span>.
+                      </div> 
+                     </div> 
+                     <span class="screen-reader-text">Safe &amp; Secure</span> 
+                    </div> 
+                   </div> 
+                   <div class="col s4 md-s6 sm-s12"> 
+                    <div class="quickfeat__item" style="margin-bottom: 48px;"> 
+                     <div class="quickfeat__icon"> 
+                      <span class="icon icon--1647187313283-6 icon--type-icon icon--large icon--disc icon--fill icon--accent"> <span class="icon__glyph"> 
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512" aria-hidden="true">
+                         <g id="User Lock6_layer">
+                          <path d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z" />
+                         </g>
+                        </svg> </span> </span> 
+                     </div>
+                     <div class="quickfeat__text" style="padding-inline-start: 24px;padding-inline-end: 48px;"> 
+                      <h4 class="quickfeat__title">Privacy Compliant</h4> 
+                      <div class="quickfeat__desc clear small-text">
+                       Fully compliant with GDPR standards.
+                      </div> 
+                     </div> 
+                     <span class="screen-reader-text">Privacy Compliant</span> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-16 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_module_16499206016936" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--16499206016936 {margin-bottom: 50px;}
+    .module--16499206016936 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--16499206016936 {}
+      .module--16499206016936 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--16499206016936 {}
+      .module--16499206016936 .module__inner {}
+    }
+  </style> 
+               <div class="module module--16499206016936 module--properties module--text-center module--md-text-center module--sm-text-center"> 
+                <div class="module__inner"> 
+                 <div class="properties properties--light "> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--16499206016936-1 icon--type-image icon--extra-large icon--light"> <span class="icon__glyph"> <img src="images/heart.png?width=1920&amp;height=1920&amp;name=heart.png" alt="heart" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=360&amp;name=heart.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=480&amp;name=heart.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=720&amp;name=heart.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=768&amp;name=heart.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=1350&amp;name=heart.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=1440&amp;name=heart.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=1920&amp;name=heart.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=2700&amp;name=heart.png 2700w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=2880&amp;name=heart.png 2880w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/heart.png?width=3840&amp;name=heart.png 3840w" width="1920" height="1920" loading="lazy"> </span> </span> 
+                   </div> 
+                   <div class="properties__text "></div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--16499206016936-2 icon--type-image icon--extra-large icon--accent"> <span class="icon__glyph"> <img src="images/Circle-1.png?width=1920&amp;height=1920&amp;name=Circle-1.png" alt="Circle-1" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=360&amp;name=Circle-1.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=480&amp;name=Circle-1.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=720&amp;name=Circle-1.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=768&amp;name=Circle-1.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=1350&amp;name=Circle-1.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=1440&amp;name=Circle-1.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=1920&amp;name=Circle-1.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=2700&amp;name=Circle-1.png 2700w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=2880&amp;name=Circle-1.png 2880w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Circle-1.png?width=3840&amp;name=Circle-1.png 3840w" width="1920" height="1920"> </span> </span> 
+                   </div> 
+                   <div class="properties__text "></div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--16499206016936-3 icon--type-image icon--extra-large icon--accent"> <span class="icon__glyph"> <img src="images/cart-1.png?width=1920&amp;height=1920&amp;name=cart-1.png" alt="cart-1" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=360&amp;name=cart-1.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=480&amp;name=cart-1.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=720&amp;name=cart-1.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=768&amp;name=cart-1.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=1350&amp;name=cart-1.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=1440&amp;name=cart-1.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=1920&amp;name=cart-1.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=2700&amp;name=cart-1.png 2700w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=2880&amp;name=cart-1.png 2880w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/cart-1.png?width=3840&amp;name=cart-1.png 3840w" width="1920" height="1920" loading="lazy"> </span> </span> 
+                   </div> 
+                   <div class="properties__text "></div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--16499206016936-4 icon--type-image icon--extra-large icon--accent"> <span class="icon__glyph"> <img src="images/Square.png?width=1920&amp;height=1920&amp;name=Square.png" alt="Square" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=360&amp;name=Square.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=480&amp;name=Square.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=720&amp;name=Square.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=768&amp;name=Square.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=1350&amp;name=Square.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=1440&amp;name=Square.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=1920&amp;name=Square.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=2700&amp;name=Square.png 2700w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=2880&amp;name=Square.png 2880w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Square.png?width=3840&amp;name=Square.png 3840w" width="1920" height="1920" loading="lazy"> </span> </span> 
+                   </div> 
+                   <div class="properties__text "></div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--16499206016936-5 icon--type-image icon--extra-large icon--accent"> <span class="icon__glyph"> <img src="images/Bag.png?width=1920&amp;height=1920&amp;name=Bag.png" alt="Bag" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=360&amp;name=Bag.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=480&amp;name=Bag.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=720&amp;name=Bag.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=768&amp;name=Bag.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=1350&amp;name=Bag.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=1440&amp;name=Bag.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=1920&amp;name=Bag.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=2700&amp;name=Bag.png 2700w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=2880&amp;name=Bag.png 2880w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Bag.png?width=3840&amp;name=Bag.png 3840w" width="1920" height="1920" loading="lazy"> </span> </span> 
+                   </div> 
+                   <div class="properties__text "></div> 
+                  </div> 
+                  <div class="properties__item"> 
+                   <div class="properties__icon"> 
+                    <span class="icon icon--16499206016936-6 icon--type-image icon--extra-large icon--accent"> <span class="icon__glyph"> <img src="images/coupon.png?width=1920&amp;height=1920&amp;name=coupon.png" alt="coupon" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=360&amp;name=coupon.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=480&amp;name=coupon.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=720&amp;name=coupon.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=768&amp;name=coupon.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=1350&amp;name=coupon.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=1440&amp;name=coupon.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=1920&amp;name=coupon.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=2700&amp;name=coupon.png 2700w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=2880&amp;name=coupon.png 2880w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/coupon.png?width=3840&amp;name=coupon.png 3840w" width="1920" height="1920" loading="lazy"> </span> </span> 
+                   </div> 
+                   <div class="properties__text "></div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-17 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_module_1648382332539" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1648382332539 {}
+    .module--1648382332539 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1648382332539 {}
+      .module--1648382332539 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1648382332539 {}
+      .module--1648382332539 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1648382332539 module--button module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="inline-items inline-items--center">
+                  <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank" class="btn btn--fill btn--medium btn--accent btn--default  btn--1648382332539-1"> Contact Us </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-18 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-19 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_module_1648032897515" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <div class="module--section-bg module--1648032897515"> 
+                <div class="section-bg__ui"></div> 
+                <div id="" class="section-bg section-bg--light section-bg--top-border-none section-bg--bottom-border-none" "> 
+                </div> 
+               </div>
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-20 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1647159299177" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1647159299177 {margin-bottom: 48px;}
+    .module--1647159299177 .module__inner {width: 550px;}
+    @media (max-width: 1139px) {
+      .module--1647159299177 {}
+      .module--1647159299177 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1647159299177 {}
+      .module--1647159299177 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1647159299177 module--section-intro module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="section-intro section-intro--light txt--light"> 
+                  <div class="section-intro__overline">
+                   Build the solution that's right for you with our modular
+                  </div> 
+                  <div class="section-intro__title"> 
+                   <h2>Interactivity &amp; Engagement Platform</h2> 
+                  </div> 
+                  <div class="section-intro__desc"> 
+                   <div class="section-intro__desc-inner clear"> 
+                    <p><span>We provide fun and engaging modules that allow your users to express themselves in a variety of ways and keep them coming back for more</span>. Our <span>built-in templates allow easy and quick set-up our most popular engagement tools, and our Freeform editor gives you absolute control when you need it.</span></p> 
+                   </div> 
+                  </div> 
+                  <div class="section-intro__divider section-intro__divider--auto">
+                   <div></div>
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-21 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1647159561146" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1647159561146 {}
+    .module--1647159561146 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1647159561146 {}
+      .module--1647159561146 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1647159561146 {}
+      .module--1647159561146 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1647159561146 module--image-box"> 
+                <div class="module__inner"> 
+                 <div id="splide_1647159561146" class="splide splide--arrows-outside splide--dots-below splide--arrows-lg splide--arrows-md splide--dots-sm splide--center-mode splide--lg-3 splide--md-2 splide--sm-1" data-splide="{
+      &quot;autoplay&quot;: true,
+      &quot;interval&quot;: 5000,
+      &quot;speed&quot;: 400,
+      &quot;updateOnMove&quot;: true,
+      
+        &quot;pagination&quot;: false,
+      
+      &quot;type&quot;: &quot;loop&quot;,
+      &quot;start&quot;: 0,
+      &quot;arrows&quot;: true,
+      &quot;perPage&quot;: 3,
+      &quot;perMove&quot;: 1,
+      
+        &quot;focus&quot;: &quot;center&quot;,
+      
+      &quot;gap&quot;: 24,
+      &quot;breakpoints&quot;: {
+        &quot;1139&quot;: {
+          
+            &quot;pagination&quot;: false,
+          
+          
+            &quot;focus&quot;: false,
+          
+          &quot;perPage&quot;: 2
+        },
+        &quot;767&quot;: {
+          
+            &quot;pagination&quot;: true,
+          
+          &quot;focus&quot;: false,
+          &quot;perPage&quot;: 1
+        }
+      }
+    }"> 
+                  <div class="splide__arrows"> 
+                   <button class="splide__arrow splide__arrow--prev"> 
+                    <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6778 2.32544C17.2482 1.89152 16.5518 1.89152 16.1222 2.32544L6.32219 11.2143C5.89261 11.6482 5.89261 12.3518 6.32219 12.7857L16.1222 21.6746C16.5518 22.1085 17.2482 22.1085 17.6778 21.6746C18.1074 21.2406 18.1074 20.5371 17.6778 20.1032L8.65564 12L17.6778 3.89679C18.1074 3.46287 18.1074 2.75935 17.6778 2.32544Z" fill="currentColor" /> 
+                    </svg> </button> 
+                   <button class="splide__arrow splide__arrow--next"> 
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.32218 2.32544C6.75176 1.89152 7.44824 1.89152 7.87782 2.32544L17.6778 11.2143C18.1074 11.6482 18.1074 12.3518 17.6778 12.7857L7.87782 21.6746C7.44824 22.1085 6.75176 22.1085 6.32218 21.6746C5.89261 21.2406 5.89261 20.5371 6.32218 20.1032L15.3444 12L6.32218 3.89679C5.89261 3.46287 5.89261 2.75935 6.32218 2.32544Z" fill="currentColor" /> 
+                    </svg> </button> 
+                  </div> 
+                  <div class="splide__track"> 
+                   <div class="splide__list"> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-"> 
+                      <img src="images/Polling-1.png?width=600&amp;height=600&amp;name=Polling-1.png" alt="Polling" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Polling-1.png?width=360&amp;name=Polling-1.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Polling-1.png?width=480&amp;name=Polling-1.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Polling-1.png?width=720&amp;name=Polling-1.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Polling-1.png?width=768&amp;name=Polling-1.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Polling-1.png?width=1200&amp;name=Polling-1.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Polling
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Many Types of End-to-End Polls
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Coupon.png?width=600&amp;height=600&amp;name=Coupon.png" alt="Coupon" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Coupon.png?width=360&amp;name=Coupon.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Coupon.png?width=480&amp;name=Coupon.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Coupon.png?width=720&amp;name=Coupon.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Coupon.png?width=768&amp;name=Coupon.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Coupon.png?width=1200&amp;name=Coupon.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Coupons
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Several Types of Coupon Experiences
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Media.png?width=600&amp;height=600&amp;name=Media.png" alt="Media" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Media.png?width=360&amp;name=Media.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Media.png?width=480&amp;name=Media.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Media.png?width=720&amp;name=Media.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Media.png?width=768&amp;name=Media.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Media.png?width=1200&amp;name=Media.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Media Gallery
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Galleries hosting audio, video, and images
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Games.png?width=600&amp;height=600&amp;name=Games.png" alt="Games" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Games.png?width=360&amp;name=Games.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Games.png?width=480&amp;name=Games.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Games.png?width=720&amp;name=Games.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Games.png?width=768&amp;name=Games.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Games.png?width=1200&amp;name=Games.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Gamification
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Built-in, configurable games to engage your users
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Shoppable.png?width=600&amp;height=600&amp;name=Shoppable.png" alt="Shoppable" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Shoppable.png?width=360&amp;name=Shoppable.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Shoppable.png?width=480&amp;name=Shoppable.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Shoppable.png?width=720&amp;name=Shoppable.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Shoppable.png?width=768&amp;name=Shoppable.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Shoppable.png?width=1200&amp;name=Shoppable.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Shoppable Galleries
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Multiple methods of instant shoppable moments, from galleries, to product highlights and more
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Comment.png?width=600&amp;height=600&amp;name=Comment.png" alt="Comment" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Comment.png?width=360&amp;name=Comment.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Comment.png?width=480&amp;name=Comment.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Comment.png?width=720&amp;name=Comment.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Comment.png?width=768&amp;name=Comment.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Comment.png?width=1200&amp;name=Comment.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Comment
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Allow your customers to share their opinions - on-air or on social media
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Loyalty.png?width=600&amp;height=600&amp;name=Loyalty.png" alt="Loyalty" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Loyalty.png?width=360&amp;name=Loyalty.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Loyalty.png?width=480&amp;name=Loyalty.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Loyalty.png?width=720&amp;name=Loyalty.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Loyalty.png?width=768&amp;name=Loyalty.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Loyalty.png?width=1200&amp;name=Loyalty.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Customer Loyalty
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Reward your customers for every interaction they make
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Fact.png?width=600&amp;height=600&amp;name=Fact.png" alt="Fact" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Fact.png?width=360&amp;name=Fact.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Fact.png?width=480&amp;name=Fact.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Fact.png?width=720&amp;name=Fact.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Fact.png?width=768&amp;name=Fact.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Fact.png?width=1200&amp;name=Fact.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Fact
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Give your users more information with quick facts
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Promo.png?width=600&amp;height=600&amp;name=Promo.png" alt="Promo" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Promo.png?width=360&amp;name=Promo.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Promo.png?width=480&amp;name=Promo.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Promo.png?width=720&amp;name=Promo.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Promo.png?width=768&amp;name=Promo.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Promo.png?width=1200&amp;name=Promo.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Promotion
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Promote Products, including action buttons for instant purchases
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Personal.png?width=600&amp;height=600&amp;name=Personal.png" alt="Personal" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Personal.png?width=360&amp;name=Personal.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Personal.png?width=480&amp;name=Personal.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Personal.png?width=720&amp;name=Personal.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Personal.png?width=768&amp;name=Personal.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Personal.png?width=1200&amp;name=Personal.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Contact Card
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Promote your brand or your business with our personal Contact Card
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Business%20Card.png?width=600&amp;height=600&amp;name=Business%20Card.png" alt="Business Card" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Business%20Card.png?width=360&amp;name=Business%20Card.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Business%20Card.png?width=480&amp;name=Business%20Card.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Business%20Card.png?width=720&amp;name=Business%20Card.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Business%20Card.png?width=768&amp;name=Business%20Card.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Business%20Card.png?width=1200&amp;name=Business%20Card.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Business Card
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Promote your business with an interactive business card
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Influencer.png?width=600&amp;height=600&amp;name=Influencer.png" alt="Influencer" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Influencer.png?width=360&amp;name=Influencer.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Influencer.png?width=480&amp;name=Influencer.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Influencer.png?width=720&amp;name=Influencer.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Influencer.png?width=768&amp;name=Influencer.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Influencer.png?width=1200&amp;name=Influencer.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Influencer
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Enable your influencers to showcase themselves easily and promote their (and your!) brand
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Biography.png?width=600&amp;height=600&amp;name=Biography.png" alt="Biography" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Biography.png?width=360&amp;name=Biography.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Biography.png?width=480&amp;name=Biography.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Biography.png?width=720&amp;name=Biography.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Biography.png?width=768&amp;name=Biography.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Biography.png?width=1200&amp;name=Biography.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Biography
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Highlight important people in the news, sports and more
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Recipe.png?width=600&amp;height=600&amp;name=Recipe.png" alt="Recipe" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Recipe.png?width=360&amp;name=Recipe.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Recipe.png?width=480&amp;name=Recipe.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Recipe.png?width=720&amp;name=Recipe.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Recipe.png?width=768&amp;name=Recipe.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Recipe.png?width=1200&amp;name=Recipe.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Recipe Card
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Put recipes at your users' fingertips
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Event.png?width=600&amp;height=600&amp;name=Event.png" alt="Event" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Event.png?width=360&amp;name=Event.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Event.png?width=480&amp;name=Event.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Event.png?width=720&amp;name=Event.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Event.png?width=768&amp;name=Event.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Event.png?width=1200&amp;name=Event.png 1200w" width="600" height="600" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Event Promotion
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Promote your events with interactive pages
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-22 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-23 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1648385623014" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1648385623014 {}
+    .module--1648385623014 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1648385623014 {}
+      .module--1648385623014 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1648385623014 {}
+      .module--1648385623014 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1648385623014 module--featshow"> 
+                <div class="module__inner"> 
+                 <div id="featshow_1648385623014" class="featshow featshow--nav-right featshow--nav-bg-accent featshow--light txt--light" current-item="0"> 
+                  <div class="featshow__wrapper"> 
+                   <!-- Content --> 
+                   <div class="featshow__content"> 
+                    <div class="featshow__content__wrapper"> 
+                     <!-- Items --> 
+                     <div class="featshow__items"> 
+                      <div class="featshow__item featshow__item--active"> 
+                       <div class="featshow__text clear"> 
+                        <h2>Get the Right Content to the Right Person at the Right Time</h2> 
+                        <p>The Sodyo Solution can deliver the your content to those you want to see it. You determine who sees the content based on whatever parameter is necessary, be that demographics-based, location-based - you name it, we deliver it!</p> 
+                       </div> 
+                       <div class="featshow__properties properties properties--light"> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512" aria-hidden="true">
+                             <g id="Users1_layer">
+                              <path d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Demographics
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                             <g id="Clock2_layer">
+                              <path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Time
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 384 512" aria-hidden="true">
+                             <g id="Alternate Map Marker3_layer">
+                              <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Location
+                         </div> 
+                        </div> 
+                       </div> 
+                       <div class="featshow__button"> 
+                        <a href="https://www.sodyo.com/contact-us?hsLang=en" class="btn btn--fill btn--large btn--accent ">Get a Demo</a> 
+                       </div> 
+                      </div> 
+                      <div class="featshow__item"> 
+                       <div class="featshow__text clear"> 
+                        <h2>New Revenue Streams with Sodyo</h2> 
+                        <p>With our built-in Sponsorship module, monetization has never been easier. In addition to direct links for purchase, each module can be sponsored by an advertiser with the results proving the ad effectiveness reported back to them.</p> 
+                       </div> 
+                       <div class="featshow__properties properties properties--light"> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" aria-hidden="true">
+                             <g id="shopping-cart1_layer">
+                              <path d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Purchase
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 288 512" aria-hidden="true">
+                             <g id="Dollar Sign2_layer">
+                              <path d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Sponsor
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                             <g id="Line Chart3_layer">
+                              <path d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Report
+                         </div> 
+                        </div> 
+                       </div> 
+                       <div class="featshow__button"> 
+                        <a href="https://www.hubspot.com/" class="btn btn--fill btn--large btn--accent ">Get Started</a> 
+                       </div> 
+                      </div> 
+                      <div class="featshow__item"> 
+                       <div class="featshow__text clear"> 
+                        <h2>The Most Detailed Data Analysis Available</h2> 
+                        <p>Every scan and click is recorded and available for full data analysis.</p> 
+                       </div> 
+                       <div class="featshow__properties properties properties--light"> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-code icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upc-scan" viewbox="0 0 16 16"> 
+                             <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z" />
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Scan
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-hidden="true">
+                             <g id="Hand Pointing Up1_layer">
+                              <path d="M135.652 0c23.625 0 43.826 20.65 43.826 44.8v99.851c17.048-16.34 49.766-18.346 70.944 6.299 22.829-14.288 53.017-2.147 62.315 16.45C361.878 158.426 384 189.346 384 240c0 2.746-.203 13.276-.195 16 .168 61.971-31.065 76.894-38.315 123.731C343.683 391.404 333.599 400 321.786 400H150.261l-.001-.002c-18.366-.011-35.889-10.607-43.845-28.464C93.421 342.648 57.377 276.122 29.092 264 10.897 256.203.008 242.616 0 224c-.014-34.222 35.098-57.752 66.908-44.119 8.359 3.583 16.67 8.312 24.918 14.153V44.8c0-23.45 20.543-44.8 43.826-44.8zM136 416h192c13.255 0 24 10.745 24 24v48c0 13.255-10.745 24-24 24H136c-13.255 0-24-10.745-24-24v-48c0-13.255 10.745-24 24-24zm168 28c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Click
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 544 512" aria-hidden="true">
+                             <g id="Pie Chart2_layer">
+                              <path d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Analyze
+                         </div> 
+                        </div> 
+                       </div> 
+                       <div class="featshow__button"> 
+                        <a href="https://www.hubspot.com/" class="btn btn--fill btn--large btn--accent ">Get Started</a> 
+                       </div> 
+                      </div> 
+                      <div class="featshow__item"> 
+                       <div class="featshow__text clear"> 
+                        <h2>Reporting Tools to Meet Your Needs</h2> 
+                        <p>We have the tools to enable you to determine if your campaigns are meeting their goals, to let your customers know how their campaigns with you have performed, and the tools available to optimize.</p> 
+                       </div> 
+                       <div class="featshow__properties properties properties--light"> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-code icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows-collapse" viewbox="0 0 16 16"> 
+                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Internal Reporting
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" aria-hidden="true">
+                             <g id="People Arrows1_layer">
+                              <path d="M96,128A64,64,0,1,0,32,64,64,64,0,0,0,96,128Zm0,176.08a44.11,44.11,0,0,1,13.64-32L181.77,204c1.65-1.55,3.77-2.31,5.61-3.57A63.91,63.91,0,0,0,128,160H64A64,64,0,0,0,0,224v96a32,32,0,0,0,32,32V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V383.61l-50.36-47.53A44.08,44.08,0,0,1,96,304.08ZM480,128a64,64,0,1,0-64-64A64,64,0,0,0,480,128Zm32,32H448a63.91,63.91,0,0,0-59.38,40.42c1.84,1.27,4,2,5.62,3.59l72.12,68.06a44.37,44.37,0,0,1,0,64L416,383.62V480a32,32,0,0,0,32,32h64a32,32,0,0,0,32-32V352a32,32,0,0,0,32-32V224A64,64,0,0,0,512,160ZM444.4,295.34l-72.12-68.06A12,12,0,0,0,352,236v36H224V236a12,12,0,0,0-20.28-8.73L131.6,295.34a12.4,12.4,0,0,0,0,17.47l72.12,68.07A12,12,0,0,0,224,372.14V336H352v36.14a12,12,0,0,0,20.28,8.74l72.12-68.07A12.4,12.4,0,0,0,444.4,295.34Z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Customer Reports
+                         </div> 
+                        </div> 
+                        <div class="properties__item"> 
+                         <div class="properties__icon"> 
+                          <span class="icon icon--type-icon icon--small icon--disc icon--outline icon--accent"> <span class="icon__glyph"> 
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                             <g id="Check Circle2_layer">
+                              <path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z" />
+                             </g>
+                            </svg> </span> </span> 
+                         </div> 
+                         <div class="properties__text important-text small-text">
+                          Optimization Tools
+                         </div> 
+                        </div> 
+                       </div> 
+                       <div class="featshow__button"> 
+                        <a href="https://www.hubspot.com/" class="btn btn--fill btn--large btn--accent ">Get Started</a> 
+                       </div> 
+                      </div> 
+                     </div> 
+                     <!-- Controls --> 
+                     <div class="featshow__controls"> 
+                      <!-- Dots --> 
+                      <div class="featshow__dots"> 
+                       <ul> 
+                        <li><button class="featshow__dot featshow__dot--active" onclick="featshow('featshow_1648385623014', 0)">Personalize</button></li> 
+                        <li><button class="featshow__dot" onclick="featshow('featshow_1648385623014', 1)">Monetize</button></li> 
+                        <li><button class="featshow__dot" onclick="featshow('featshow_1648385623014', 2)">Analyze</button></li> 
+                        <li><button class="featshow__dot" onclick="featshow('featshow_1648385623014', 3)">Report</button></li> 
+                       </ul> 
+                      </div> 
+                      <!-- Arrows --> 
+                      <div class="featshow__arrows"> 
+                       <div class="featshow__arrow featshow__arrow--prev" onclick="featshow('featshow_1648385623014', 'prev')"> 
+                        <svg width="13" height="12" viewbox="0 0 13 12" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M6.8044 0.299265C6.4174 -0.0947348 5.7842 -0.100434 5.3902 0.286566L0.299299 5.28657C0.107799 5.47457 2.34555e-08 5.73166 0 5.99996C-2.34555e-08 6.26826 0.107799 6.52537 0.299299 6.71337L5.3902 11.7134C5.7842 12.1004 6.4174 12.0947 6.8044 11.7007C7.1913 11.3066 7.1856 10.6735 6.7916 10.2865L3.4453 6.99997L12 6.99997C12.5523 6.99997 13 6.55227 13 5.99997C13 5.44767 12.5523 4.99997 12 4.99997L3.4453 4.99997L6.7916 1.71337C7.1856 1.32647 7.1913 0.693265 6.8044 0.299265Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                       <div class="featshow__arrow-dot"></div> 
+                       <div class="featshow__arrow featshow__arrow--next featshow__arrow--active" onclick="featshow('featshow_1648385623014', 'next')"> 
+                        <svg width="13" height="12" viewbox="0 0 13 12" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M6.1956 11.7007C6.5826 12.0947 7.2158 12.1004 7.6098 11.7134L12.7007 6.7134C12.8922 6.5254 13 6.2683 13 6C13 5.7317 12.8922 5.4746 12.7007 5.2866L7.6098 0.286553C7.2158 -0.100437 6.5826 -0.0947366 6.1956 0.299293C5.8087 0.693323 5.8144 1.32646 6.2084 1.71345L9.5547 5H1C0.44772 5 0 5.4477 0 6C0 6.5523 0.44772 7 1 7H9.5547L6.2084 10.2866C5.8144 10.6735 5.8087 11.3067 6.1956 11.7007Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                   </div> 
+                   <!-- Nav --> 
+                   <div class="featshow__nav"> 
+                    <div class="featshow__nav__wrapper"> 
+                     <ul> 
+                      <li><button class="featshow__btn featshow__btn--active" onclick="featshow('featshow_1648385623014', 0)">Personalize</button></li> 
+                      <li><button class="featshow__btn" onclick="featshow('featshow_1648385623014', 1)">Monetize</button></li> 
+                      <li><button class="featshow__btn" onclick="featshow('featshow_1648385623014', 2)">Analyze</button></li> 
+                      <li><button class="featshow__btn" onclick="featshow('featshow_1648385623014', 3)">Report</button></li> 
+                     </ul> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-24 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-25 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-16" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <div class="module--section-bg module--content_bucket-module-16"> 
+                <div class="section-bg__ui"></div> 
+                <div id="" class="section-bg section-bg--light section-bg--top-border-none section-bg--bottom-border-none" "> 
+                </div> 
+               </div>
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-26 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1647186326707" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1647186326707 {margin-bottom: 48px;}
+    .module--1647186326707 .module__inner {width: 550px;}
+    @media (max-width: 1139px) {
+      .module--1647186326707 {}
+      .module--1647186326707 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1647186326707 {}
+      .module--1647186326707 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1647186326707 module--section-intro module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="section-intro section-intro--light txt--light"> 
+                  <div class="section-intro__overline">
+                   The Sodyo Advantage
+                  </div> 
+                  <div class="section-intro__title"> 
+                   <h2>How We Outshine the Competition</h2> 
+                  </div> 
+                  <div class="section-intro__desc"> 
+                   <div class="section-intro__desc-inner clear"> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-27 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1648032086301" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1648032086301 {}
+    .module--1648032086301 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1648032086301 {}
+      .module--1648032086301 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1648032086301 {}
+      .module--1648032086301 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1648032086301 module--shifter"> 
+                <div class="module__inner"> 
+                 <div id="shifter_1648032086301" class="shifter shifter--light shifter--ds shifter--ssd shifter--scroll-always shifter--nav-nowrap items-start"> 
+                  <div class="shifter__col shifter__col--static" style="width: 70%"> 
+                   <div class="shifter__intro clear txt--light"> 
+                    <p>In a world overrun with QR code solutions, we set ourselves apart by having the best scan code technology in the world. But that's not enough - along with this, we have the best overall solution as well, allowing all of the following benefits:</p> 
+                   </div> 
+                   <div class="shifter__nav txt--light"> 
+                    <div class="shifter__nav__item shifter__nav__item--active small-text important-text" role="button" onclick="shifter('shifter_1648032086301', 0)">
+                     Highly Intuitive &amp;
+                     <br>Experiential Apps
+                    </div>
+                    <div class="shifter__nav__item small-text important-text" role="button" onclick="shifter('shifter_1648032086301', 1)">
+                     Sophisticated Data
+                    </div>
+                    <div class="shifter__nav__item small-text important-text" role="button" onclick="shifter('shifter_1648032086301', 2)">
+                     Safe &amp; Trusted
+                     <br>Digital Ecosystem
+                    </div>
+                    <div class="shifter__nav__item small-text important-text" role="button" onclick="shifter('shifter_1648032086301', 3)">
+                     Delight our
+                     <br>customers
+                    </div> 
+                   </div> 
+                  </div> 
+                  <div class="shifter__col shifter__col--dynamic" style="width: 30%"> 
+                   <div class="shifter__content"> 
+                    <div class="shifter__content__item txt--light  shifter__content__item--active justify-start img--radius"> 
+                     <div> 
+                      <img src="images/Experiential%20Applications.png?width=640&amp;height=560&amp;name=Experiential%20Applications.png" alt="Experiential Applications" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Experiential%20Applications.png?width=360&amp;name=Experiential%20Applications.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Experiential%20Applications.png?width=480&amp;name=Experiential%20Applications.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Experiential%20Applications.png?width=720&amp;name=Experiential%20Applications.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Experiential%20Applications.png?width=768&amp;name=Experiential%20Applications.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Experiential%20Applications.png?width=1280&amp;name=Experiential%20Applications.png 1280w" width="640" height="560" loading="lazy"> 
+                     </div> 
+                    </div> 
+                    <div class="shifter__content__item txt--light  justify-start img--radius"> 
+                     <div> 
+                      <img src="images/Sophisticated%20Data.png?width=640&amp;height=560&amp;name=Sophisticated%20Data.png" alt="Sophisticated Data" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sophisticated%20Data.png?width=360&amp;name=Sophisticated%20Data.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sophisticated%20Data.png?width=480&amp;name=Sophisticated%20Data.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sophisticated%20Data.png?width=720&amp;name=Sophisticated%20Data.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sophisticated%20Data.png?width=768&amp;name=Sophisticated%20Data.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sophisticated%20Data.png?width=1280&amp;name=Sophisticated%20Data.png 1280w" width="640" height="560"> 
+                     </div> 
+                    </div> 
+                    <div class="shifter__content__item txt--light  justify-start img--radius"> 
+                     <div> 
+                      <img src="images/Secure%20Data.png?width=640&amp;height=560&amp;name=Secure%20Data.png" alt="Secure Data" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Secure%20Data.png?width=360&amp;name=Secure%20Data.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Secure%20Data.png?width=480&amp;name=Secure%20Data.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Secure%20Data.png?width=720&amp;name=Secure%20Data.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Secure%20Data.png?width=768&amp;name=Secure%20Data.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Secure%20Data.png?width=1280&amp;name=Secure%20Data.png 1280w" width="640" height="560" loading="lazy"> 
+                     </div> 
+                    </div> 
+                    <div class="shifter__content__item txt--light  justify-start img--radius"> 
+                     <div> 
+                      <img src="images/Delighted%20Customers.png?width=640&amp;height=560&amp;name=Delighted%20Customers.png" alt="Delighted Customers" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Delighted%20Customers.png?width=360&amp;name=Delighted%20Customers.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Delighted%20Customers.png?width=480&amp;name=Delighted%20Customers.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Delighted%20Customers.png?width=720&amp;name=Delighted%20Customers.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Delighted%20Customers.png?width=768&amp;name=Delighted%20Customers.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Delighted%20Customers.png?width=1280&amp;name=Delighted%20Customers.png 1280w" width="640" height="560" loading="lazy"> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-28 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_module_1648382378966" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1648382378966 {}
+    .module--1648382378966 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1648382378966 {}
+      .module--1648382378966 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1648382378966 {}
+      .module--1648382378966 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1648382378966 module--button module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="inline-items inline-items--center">
+                  <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank" class="btn btn--fill btn--medium btn--accent btn--default  btn--1648382378966-1"> Contact Us </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-29 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-30 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-17" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-17 {margin-bottom: 48px;}
+    .module--content_bucket-module-17 .module__inner {width: 550px;}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-17 {}
+      .module--content_bucket-module-17 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-17 {}
+      .module--content_bucket-module-17 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-17 module--section-intro module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="section-intro section-intro--light txt--light"> 
+                  <div class="section-intro__title"> 
+                   <h2>Where Will You Use Sodyo?</h2> 
+                  </div> 
+                  <div class="section-intro__desc"> 
+                   <div class="section-intro__desc-inner clear"> 
+                   </div> 
+                  </div> 
+                  <div class="section-intro__divider section-intro__divider--auto">
+                   <div></div>
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-31 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_widget_1647189756049" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--1647189756049 {}
+    .module--1647189756049 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--1647189756049 {}
+      .module--1647189756049 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--1647189756049 {}
+      .module--1647189756049 .module__inner {}
+    }
+  </style> 
+               <div class="module module--1647189756049 module--image-box"> 
+                <div class="module__inner"> 
+                 <div id="splide_1647189756049" class="splide splide--arrows-outside splide--dots-below splide--arrows-lg splide--arrows-md splide--dots-sm splide--center-mode splide--lg-3 splide--md-2 splide--sm-1" data-splide="{
+      &quot;autoplay&quot;: true,
+      &quot;interval&quot;: 5000,
+      &quot;speed&quot;: 400,
+      &quot;updateOnMove&quot;: true,
+      
+        &quot;pagination&quot;: false,
+      
+      &quot;type&quot;: &quot;loop&quot;,
+      &quot;start&quot;: 0,
+      &quot;arrows&quot;: true,
+      &quot;perPage&quot;: 3,
+      &quot;perMove&quot;: 1,
+      
+        &quot;focus&quot;: &quot;center&quot;,
+      
+      &quot;gap&quot;: 24,
+      &quot;breakpoints&quot;: {
+        &quot;1139&quot;: {
+          
+            &quot;pagination&quot;: false,
+          
+          
+            &quot;focus&quot;: false,
+          
+          &quot;perPage&quot;: 2
+        },
+        &quot;767&quot;: {
+          
+            &quot;pagination&quot;: true,
+          
+          &quot;focus&quot;: false,
+          &quot;perPage&quot;: 1
+        }
+      }
+    }"> 
+                  <div class="splide__arrows"> 
+                   <button class="splide__arrow splide__arrow--prev"> 
+                    <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6778 2.32544C17.2482 1.89152 16.5518 1.89152 16.1222 2.32544L6.32219 11.2143C5.89261 11.6482 5.89261 12.3518 6.32219 12.7857L16.1222 21.6746C16.5518 22.1085 17.2482 22.1085 17.6778 21.6746C18.1074 21.2406 18.1074 20.5371 17.6778 20.1032L8.65564 12L17.6778 3.89679C18.1074 3.46287 18.1074 2.75935 17.6778 2.32544Z" fill="currentColor" /> 
+                    </svg> </button> 
+                   <button class="splide__arrow splide__arrow--next"> 
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.32218 2.32544C6.75176 1.89152 7.44824 1.89152 7.87782 2.32544L17.6778 11.2143C18.1074 11.6482 18.1074 12.3518 17.6778 12.7857L7.87782 21.6746C7.44824 22.1085 6.75176 22.1085 6.32218 21.6746C5.89261 21.2406 5.89261 20.5371 6.32218 20.1032L15.3444 12L6.32218 3.89679C5.89261 3.46287 5.89261 2.75935 6.32218 2.32544Z" fill="currentColor" /> 
+                    </svg> </button> 
+                  </div> 
+                  <div class="splide__track"> 
+                   <div class="splide__list"> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-"> 
+                      <img src="images/Scan.png?width=990&amp;height=990&amp;name=Scan.png" alt="Sodyo Scan" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=360&amp;name=Scan.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=480&amp;name=Scan.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=720&amp;name=Scan.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=768&amp;name=Scan.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=1350&amp;name=Scan.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=1440&amp;name=Scan.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=1920&amp;name=Scan.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Scan.png?width=1980&amp;name=Scan.png 1980w" width="990" height="990" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Broadcast Media
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Transforming TV with interactive programs and advertisements
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Out%20of%20Home%20Square.png?width=990&amp;height=990&amp;name=Out%20of%20Home%20Square.png" alt="Out of Home" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=360&amp;name=Out%20of%20Home%20Square.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=480&amp;name=Out%20of%20Home%20Square.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=720&amp;name=Out%20of%20Home%20Square.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=768&amp;name=Out%20of%20Home%20Square.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=1350&amp;name=Out%20of%20Home%20Square.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=1440&amp;name=Out%20of%20Home%20Square.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=1920&amp;name=Out%20of%20Home%20Square.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Out%20of%20Home%20Square.png?width=1980&amp;name=Out%20of%20Home%20Square.png 1980w" width="990" height="990" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Out of Home
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Interact with everything in sight
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Retail%20Square.png?width=990&amp;height=990&amp;name=Retail%20Square.png" alt="Retail Square" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=360&amp;name=Retail%20Square.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=480&amp;name=Retail%20Square.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=720&amp;name=Retail%20Square.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=768&amp;name=Retail%20Square.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=1350&amp;name=Retail%20Square.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=1440&amp;name=Retail%20Square.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=1920&amp;name=Retail%20Square.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Retail%20Square.png?width=1980&amp;name=Retail%20Square.png 1980w" width="990" height="990" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Retail
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         Whether on TV advertisements or in-store, Sodyo has the right solution for you
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <img src="images/Sports%20Square.png?width=990&amp;height=990&amp;name=Sports%20Square.png" alt="Sports" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=360&amp;name=Sports%20Square.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=480&amp;name=Sports%20Square.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=720&amp;name=Sports%20Square.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=768&amp;name=Sports%20Square.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=1350&amp;name=Sports%20Square.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=1440&amp;name=Sports%20Square.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=1920&amp;name=Sports%20Square.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Sports%20Square.png?width=1980&amp;name=Sports%20Square.png 1980w" width="990" height="990" loading="lazy" class="image-box__image"> 
+                      <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                       <div class="image-box__text"> 
+                        <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                        <div class="image-box__title">
+                         Sports
+                        </div> 
+                        <div class="image-box__desc  small-text">
+                         In stadium or broadcast, Sodyo can offer you engaging and easily monetizable solutions
+                        </div> 
+                       </div> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="splide__slide"> 
+                     <div class="image-box image-box--caption-always"> 
+                      <a href="http://zimark.io/" target="_blank" class="image-box__link "> <img src="images/Zimark%20Truck%20with%20logo.png?width=990&amp;height=990&amp;name=Zimark%20Truck%20with%20logo.png" alt="Zimark Truck with logo" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=360&amp;name=Zimark%20Truck%20with%20logo.png 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=480&amp;name=Zimark%20Truck%20with%20logo.png 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=720&amp;name=Zimark%20Truck%20with%20logo.png 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=768&amp;name=Zimark%20Truck%20with%20logo.png 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=1350&amp;name=Zimark%20Truck%20with%20logo.png 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=1440&amp;name=Zimark%20Truck%20with%20logo.png 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=1920&amp;name=Zimark%20Truck%20with%20logo.png 1920w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/Zimark%20Truck%20with%20logo.png?width=1980&amp;name=Zimark%20Truck%20with%20logo.png 1980w" width="990" height="990" class="image-box__image"> 
+                       <div class="image-box__caption image-box__caption--dark image-box__caption--desc-hover-always-mobile"> 
+                        <div class="image-box__text"> 
+                         <div class="image-box__overlay bg-dark" style="opacity: 0.70;"></div> 
+                         <div class="image-box__title">
+                          Logistics
+                         </div> 
+                         <div class="image-box__desc  small-text">
+                          In 2021, Sodyo and ZIM Integrated Shipping Services Inc partnered to form ZIMARK to revolutionize the logistics industry
+                         </div> 
+                        </div> 
+                       </div> </a> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-32 dnd-section"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-cell dnd-column" style="" data-widget-type="cell" data-x="0" data-w="12"> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-33 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-20" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <div class="module--section-bg module--content_bucket-module-20"> 
+                <div class="section-bg__ui"></div> 
+                <div id="" class="section-bg section-bg--accent section-bg--top-border-none section-bg--bottom-border-none" "> 
+                </div> 
+               </div>
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-34 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-21" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-21 {margin-bottom: 8px;}
+    .module--content_bucket-module-21 .module__inner {width: 700px;}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-21 {}
+      .module--content_bucket-module-21 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-21 {margin-bottom: 0px;}
+      .module--content_bucket-module-21 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-21 module--section-intro module--block-center module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="section-intro section-intro--dark txt--dark"> 
+                  <div class="section-intro__overline">
+                   Want to Give it a Try?
+                  </div> 
+                  <div class="section-intro__title"> 
+                   <h2>Try Sodyo and See for Yourself</h2> 
+                  </div> 
+                  <div class="section-intro__desc"> 
+                   <div class="section-intro__desc-inner clear"> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+           <div class="row-fluid-wrapper row-depth-1 row-number-35 dnd-row"> 
+            <div class="row-fluid "> 
+             <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+              <div id="hs_cos_wrapper_content_bucket-module-22" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--content_bucket-module-22 {}
+    .module--content_bucket-module-22 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-22 {}
+      .module--content_bucket-module-22 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-22 {}
+      .module--content_bucket-module-22 .module__inner {}
+    }
+  </style> 
+               <div class="module module--content_bucket-module-22 module--button module--text-center"> 
+                <div class="module__inner"> 
+                 <div class="inline-items inline-items--center">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--large btn--white btn--default  btn--content_bucket-module-22-1"> Scan Now </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div>
+             <!--end widget-span --> 
+            </div>
+            <!--end row--> 
+           </div>
+           <!--end row-wrapper --> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+       </div>
+       <!--end widget-span --> 
+      </div> 
+     </div> 
+    </div> 
+   </main> 
+   <div data-global-resource-path="Act3 Sodyo/partials/footer-11.html"> 
+    <footer class="footer footer--11 hs-search-hidden"> 
+     <div class="footer__section footer__section--main section"> 
+      <div class="footer__center container"> 
+       <div class="row"> 
+        <div class="col s4 md-s12"> 
+         <div class="footer__about"> 
+          <div id="hs_cos_wrapper_footer_about" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+           <style>
+    .module--footer_about {margin-bottom: 24px;}
+    .module--footer_about .module__inner {width: 320px;}
+    @media (max-width: 1139px) {
+      .module--footer_about {}
+      .module--footer_about .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_about {}
+      .module--footer_about .module__inner {}
+    }
+  </style> 
+           <div class="module module--footer_about module--rtext module--md-block-center module--md-text-center"> 
+            <div class="module__inner"> 
+             <div id="rtext__footer_about" class="rtext rtext--box-none txt--light txt--light"> 
+              <div class="rtext__content clear small-text"> 
+               <h4>About Sodyo</h4> 
+               <p>Sodyo's revolutionary new scanning technology can be used nearly everywhere on almost anything. If you can see it, you can scan it, in the most futuristic user experience on the market today.</p> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="footer__icons"> 
+          <div id="hs_cos_wrapper_footer_icons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+           <style>
+    .module--footer_icons {margin-bottom: 30px;}
+    .module--footer_icons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_icons {margin-bottom: 50px;}
+      .module--footer_icons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_icons {}
+      .module--footer_icons .module__inner {}
+    }
+  </style> 
+           <div class="module module--footer_icons module--icon module--md-text-center"> 
+            <div class="module__inner"> 
+             <div class="inline-items inline-items--md-center" style="gap: 30px;">
+              <a href="https://www.youtube.com/channel/UCYrdizFxW9y4n3A6hDHE8sw?sub_confirmation=1" target="_blank"><span class="icon icon--footer_icons-1 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" aria-hidden="true">
+                  <g id="YouTube1_layer">
+                   <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text"></span> </span></a>
+              <a href="https://www.linkedin.com/company/3295996" target="_blank"><span class="icon icon--footer_icons-2 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-hidden="true">
+                  <g id="LinkedIn2_layer">
+                   <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text">Join us on Slack</span> </span></a>
+              <a href="https://www.facebook.com/1026710320674540" target="_blank"><span class="icon icon--footer_icons-3 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                  <g id="Facebook3_layer">
+                   <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text">Browse our GitHub projects</span> </span></a>
+              <a href="https://twitter.com/SodyoO2O" target="_blank"><span class="icon icon--footer_icons-4 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                  <g id="Twitter4_layer">
+                   <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text">Read our Twitter feed</span> </span></a>
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="col s8 md-s12"> 
+         <div class="footer__nav"> 
+          <div id="hs_cos_wrapper_footer_nav" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+           <style>
+    .module--footer_nav {}
+    .module--footer_nav .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_nav {}
+      .module--footer_nav .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_nav {}
+      .module--footer_nav .module__inner {width: 400px;}
+    }
+  </style> 
+           <div class="module module--footer_nav module--col-nav module--block-right module--sm-block-center module--sm-text-center"> 
+            <div class="module__inner"> 
+             <div class="col-nav col-nav--light"> 
+              <div class="row justify-end"> 
+               <div class="col s4 md-s4 sm-s6"> 
+                <div class="box"> 
+                 <div class="col-nav__col"> 
+                  <div class="col-nav__title">
+                   <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank">Resources</a>
+                  </div> 
+                  <ul class="col-nav__list"> 
+                   <li class="col-nav__item"> <a href="https://www.sodyo.com/blog?hsLang=en" class="col-nav__link ">Read our Blog</a> </li> 
+                   <li class="col-nav__item"> <a href="https://www.sodyo.com/try-sodyo?hsLang=en" target="_blank" class="col-nav__link ">Try Sodyo</a> </li> 
+                   <li class="col-nav__item"> <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank" class="col-nav__link ">Contact Us</a> </li> 
+                  </ul> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="footer__section footer__section--bottom section"> 
+      <div class="footer__center container"> 
+       <div class="row"> 
+        <div class="col s12"> 
+         <div class="footer__legal"> 
+          <div class="flex flex-row items-center justify-between sm-flex-col sm-items-stretch"> 
+           <div class="footer__copyright"> 
+            <div id="hs_cos_wrapper_footer_copyright" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+             <style>
+    .module--footer_copyright {}
+    .module--footer_copyright .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_copyright {}
+      .module--footer_copyright .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_copyright {margin-bottom: 24px;}
+      .module--footer_copyright .module__inner {}
+    }
+  </style> 
+             <div class="module module--footer_copyright module--rtext module--sm-text-center"> 
+              <div class="module__inner"> 
+               <div id="rtext__footer_copyright" class="rtext rtext--box-none txt--light txt--light"> 
+                <div class="rtext__content clear small-text">
+                  Copyright © 2022 Sodyo, Ltd. 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+           <div class="footer__links"> 
+            <div id="hs_cos_wrapper_footer_links" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+             <style>
+    .module--footer_links {}
+    .module--footer_links .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_links {}
+      .module--footer_links .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_links {}
+      .module--footer_links .module__inner {}
+    }
+  </style> 
+             <div class="module module--footer_links module--rtext module--text-right module--sm-text-center"> 
+              <div class="module__inner"> 
+               <div id="rtext__footer_links" class="rtext rtext--box-none txt--light txt--light"> 
+                <div class="rtext__content clear small-text"> 
+                 <ul> 
+                  <li><a href="#">Terms</a></li> 
+                  <li><a href="#">Privacy</a></li> 
+                 </ul> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </footer> 
+   </div> 
+  </div> 
+  <script src="js/main.min.js"></script> 
+  <script src="js/child.min.js"></script> 
+  <script defer src="js/lightbox.min.js"></script> 
+  <script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script> 
+  <script src="js/project.js"></script> 
+  <script defer src="js/nav.min.js"></script> 
+  <script src="js/site-search.min.js"></script> 
+  <script src="js/lang-select.min.js"></script> 
+  <script src="js/mobile-nav.min.js"></script> 
+  <script src="js/splide.min.js"></script> 
+  <script defer src="js/features-showcase.min.js"></script> 
+  <script src="js/shifter.min.js"></script> 
+  <!-- Start of HubSpot Analytics Code Not Loaded --> 
+  <script>
+(function(){
+  const timeoutEvent = document.createEvent('CustomEvent');
+  timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+  window.dispatchEvent(timeoutEvent);
+})();
+</script> 
+  <!-- End of HubSpot Analytics Code Not Loaded --> 
+  <script type="text/javascript">
+var hsVars = {
+    ticks: 1658329103529,
+    page_id: 68273465747,
+    
+    content_group_id: 0,
+    portal_id: 3890348,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "68273465747",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: null
+}
+</script> 
+  <script defer src="js/index.js"></script> 
+ </body>
+</html>

@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en" class="no-js ">
+ <head> 
+  <meta charset="utf-8"> 
+  <title>Sodyo Player Kit</title> 
+  <link rel="shortcut icon" href="https://www.sodyo.com/hubfs/SodyoSeptember2017/Images/favicon-16x16.png"> 
+  <meta name="description" content=""> 
+  <script>			
+      // init act obj
+			var act = {};
+      
+      // act vars
+      act.xs = 479;
+      act.sm = 767;
+      act.md = 1139;
+			
+			// Scroll offset
+			act.scroll_offset = {
+				sm: 66,
+				md: 66,
+				lg: 66,
+				get: function() {
+					if(window.matchMedia('(max-width: 767px)').matches) return act.scroll_offset.sm;
+					if(window.matchMedia('(min-width: 1140px)').matches) return act.scroll_offset.lg;
+					return act.scroll_offset.md;
+				},
+				set: function(sm, md, lg){
+					act.scroll_offset.sm = sm;
+					act.scroll_offset.md = md;
+					act.scroll_offset.lg = lg;
+				}
+			};
+		</script> 
+  <script src="/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js"></script> 
+  <script>hsjQuery = window['jQuery'];</script> 
+  <meta property="og:description" content=""> 
+  <meta property="og:title" content="Sodyo Player Kit"> 
+  <meta name="twitter:description" content=""> 
+  <meta name="twitter:title" content="Sodyo Player Kit"> 
+  <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445611396/1652326467217/Act3_Sodyo/css/main.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445984132/1650794960390/Act3_Sodyo/child.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445956465/1652326459605/Act3_Sodyo/css/components/nav.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52444303726/1652326468140/Act3_Sodyo/css/components/site-search.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445630052/1652326463750/Act3_Sodyo/css/components/lang-select.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445610591/1652326469841/Act3_Sodyo/css/components/mobile-nav.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445610403/1652326462058/Act3_Sodyo/css/components/header-01.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445629848/1652326468112/Act3_Sodyo/css/components/image-plus-text.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445475706/1652326466976/Act3_Sodyo/css/components/rich-text.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/module_assets/52445633067/1652326454565/module_52445633067_icon.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445604509/1652326462533/Act3_Sodyo/css/components/column-navigation.min.css"> 
+  <link rel="stylesheet" href="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445979175/1652326468855/Act3_Sodyo/css/components/footer-11.min.css"> 
+  <!-- Editor Styles --> 
+  <style id="hs_editor_style" type="text/css">
+.content_bucket-row-0-force-full-width-section > .row-fluid {
+  max-width: none !important;
+}
+/* HubSpot Styles (default) */
+.content_bucket-row-0-padding {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+</style> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi:regular|Andika:regular|Jost:regular,500,600&amp;display=swap"> 
+  <!--  Added by GoogleAnalytics integration --> 
+  <script>
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-107396836-1','auto');
+  ga('send','pageview');
+}}]);
+</script> 
+  <!-- /Added by GoogleAnalytics integration --> 
+  <link rel="canonical" href="../../../com/sodyo/www/fc-sodyo-home-kit-0-0.html"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <script>
+(function(b,c,e,f,g){f=b.createElement(c),g=b.getElementsByTagName(c)[0],f.async=1,f.src='https://www.overlayBI.com/snippet/'+e+'.js',g.parentNode.insertBefore(f,g)})(document,'script','107396836');
+</script> 
+  <meta property="og:url" content="https://www.sodyo.com/fc-sodyo-home-kit-0-0"> 
+  <script>var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };</script> 
+  <meta name="twitter:card" content="summary"> 
+  <meta http-equiv="content-language" content="en"> 
+  <script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Promise,Object.assign,Element.prototype.closest"></script> 
+  <script nomodule src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445408559/1650794965532/Act3_Sodyo/js/ie.min.js"></script> 
+  <meta name="generator" content="HubSpot">
+ </head> 
+ <body class="  hs-content-id-74841591991 hs-site-page page "> 
+  <div id="top"></div> 
+  <div class="page"> 
+   <div data-global-resource-path="Act3 Sodyo/partials/header-01.html"> 
+    <header class="header header--1  header--sticky header--w-search header--wo-lang hs-search-hidden"> 
+     <div class="header__sticky-wrapper"> 
+      <div class="header__sticky-element"> 
+       <div class="header__section header__section--main section"> 
+        <div class="header__center container"> 
+         <div class="row items-center"> 
+          <div class="col s2 md-s2 sm-s4 justify-center"> 
+           <div class="header__logo"> 
+            <div class="header__logo__static"> 
+             <div id="hs_cos_wrapper_static_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <span id="hs_cos_wrapper_static_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../../../com/sodyo/www/index.html" id="hs-link-static_header_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png" class="hs-image-widget " style="width:207px;border-width:0px;border:0px;" width="207" alt="Sodyo Logo" title="Sodyo Logo" srcset="https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=104&amp;name=trans%20logo%20new%20dec-18-1.png 104w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png 207w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=311&amp;name=trans%20logo%20new%20dec-18-1.png 311w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=414&amp;name=trans%20logo%20new%20dec-18-1.png 414w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=518&amp;name=trans%20logo%20new%20dec-18-1.png 518w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=621&amp;name=trans%20logo%20new%20dec-18-1.png 621w" sizes="(max-width: 207px) 100vw, 207px"></a></span> 
+             </div> 
+            </div> 
+            <div class="header__logo__overlap"> 
+             <div id="hs_cos_wrapper_overlapping_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <span id="hs_cos_wrapper_overlapping_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../../../com/sodyo/www/index.html" id="hs-link-overlapping_header_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=266&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png" class="hs-image-widget " style="width:266px;border-width:0px;border:0px;" width="266" alt="SODYO Logo" title="SODYO Logo" srcset="https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=133&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 133w, https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=266&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 266w, https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=399&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 399w, https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=532&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 532w, https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=665&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 665w, https://www.sodyo.com/hs-fs/hubfs/SODYO%20Logo%20Trans%20website%20june-18.png?width=798&amp;name=SODYO%20Logo%20Trans%20website%20june-18.png 798w" sizes="(max-width: 266px) 100vw, 266px"></a></span> 
+             </div> 
+            </div> 
+            <div class="header__logo__sticky"> 
+             <div id="hs_cos_wrapper_sticky_header_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <span id="hs_cos_wrapper_sticky_header_logo_hs_logo_widget" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../../../com/sodyo/www/index.html" id="hs-link-sticky_header_logo_hs_logo_widget" style="border-width:0px;border:0px;"><img src="https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png" class="hs-image-widget " style="width:207px;border-width:0px;border:0px;" width="207" alt="Sodyo Logo" title="Sodyo Logo" srcset="https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=104&amp;name=trans%20logo%20new%20dec-18-1.png 104w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=207&amp;name=trans%20logo%20new%20dec-18-1.png 207w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=311&amp;name=trans%20logo%20new%20dec-18-1.png 311w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=414&amp;name=trans%20logo%20new%20dec-18-1.png 414w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=518&amp;name=trans%20logo%20new%20dec-18-1.png 518w, https://www.sodyo.com/hs-fs/hubfs/trans%20logo%20new%20dec-18-1.png?width=621&amp;name=trans%20logo%20new%20dec-18-1.png 621w" sizes="(max-width: 207px) 100vw, 207px"></a></span> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+          <div class="col s10 md-s10 sm-s8"> 
+           <div class="flex flex-row items-center justify-end no-shrink wrap"> 
+            <div class="header__nav"> 
+             <div id="hs_cos_wrapper_header_nav" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <style>
+    .module--header_nav {}
+    .module--header_nav .module__inner {}
+    @media (max-width: 1139px) {
+      .module--header_nav {}
+      .module--header_nav .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--header_nav {}
+      .module--header_nav .module__inner {}
+    }
+  </style> 
+              <div class="module module--header_nav module--nav"> 
+               <div class="module__inner"> 
+                <nav class="nav nav--light nav--on-hover hs-skip-lang-url-rewrite" flyout-delay="200" aria-label="Website"> 
+                 <ul class="nav__list nav__list--level1" role="menubar"> 
+                  <li class="nav__item nav__item--branch" role="none"> <a id="navlink_header_nav_1_1" class="nav__link" href="../../../com/sodyo/www/index.html" role="menuitem" aria-expanded="true">Resources</a> 
+                   <ul class="nav__list nav__list--level2 nav__list--flyout" role="menu"> 
+                    <li class="nav__item" role="none"> <a id="navlink_header_nav_2_1" class="nav__link" href="https://www.sodyo.com/blog" role="menuitem">Read our blog</a> </li> 
+                   </ul> </li> 
+                  <li class="nav__item nav__item--branch" role="none"> <a id="navlink_header_nav_1_2" class="nav__link" href="../../../com/sodyo/www/index.html" role="menuitem" aria-expanded="true">Company</a> 
+                   <ul class="nav__list nav__list--level2 nav__list--flyout" role="menu"> 
+                    <li class="nav__item" role="none"> <a id="navlink_header_nav_2_1" class="nav__link" href="https://www.sodyo.com/contact-us" role="menuitem">Contact Us</a> </li> 
+                   </ul> </li> 
+                 </ul> 
+                </nav> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="header__search"> 
+             <div id="hs_cos_wrapper_header_search" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <div id="header_search" class="site-search site-search--light txt--light"> 
+               <a href="../../../com/sodyo/www/index.html" class="site-search__open ui-icon" role="button" aria-label="Open search window"> 
+                <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                 <path d="M20.71 19.29L17.31 15.9C18.407 14.5025 19.0022 12.7767 19 11C19 9.41775 18.5308 7.87103 17.6518 6.55544C16.7727 5.23984 15.5233 4.21446 14.0615 3.60896C12.5997 3.00346 10.9911 2.84504 9.43928 3.15372C7.88743 3.4624 6.46197 4.22433 5.34315 5.34315C4.22433 6.46197 3.4624 7.88743 3.15372 9.43928C2.84504 10.9911 3.00347 12.5997 3.60897 14.0615C4.21447 15.5233 5.23985 16.7727 6.55544 17.6518C7.87103 18.5308 9.41775 19 11 19C12.7767 19.0022 14.5025 18.407 15.9 17.31L19.29 20.71C19.383 20.8037 19.4936 20.8781 19.6154 20.9289C19.7373 20.9797 19.868 21.0058 20 21.0058C20.132 21.0058 20.2627 20.9797 20.3846 20.9289C20.5064 20.8781 20.617 20.8037 20.71 20.71C20.8037 20.617 20.8781 20.5064 20.9289 20.3846C20.9797 20.2627 21.0058 20.132 21.0058 20C21.0058 19.868 20.9797 19.7373 20.9289 19.6154C20.8781 19.4936 20.8037 19.383 20.71 19.29ZM5 11C5 9.81331 5.3519 8.65327 6.01119 7.66658C6.67047 6.67988 7.60755 5.91085 8.7039 5.45672C9.80026 5.0026 11.0067 4.88378 12.1705 5.11529C13.3344 5.3468 14.4035 5.91824 15.2426 6.75736C16.0818 7.59647 16.6532 8.66557 16.8847 9.82946C17.1162 10.9933 16.9974 12.1997 16.5433 13.2961C16.0892 14.3925 15.3201 15.3295 14.3334 15.9888C13.3467 16.6481 12.1867 17 11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11Z" fill="currentColor" /> 
+                </svg> </a> 
+               <div class="site-search__popup"> 
+                <div class="site-search__bar"> 
+                 <form id="searchForm" class="site-search__form" autocomplete="off" results-zero-text="Sorry, no results found."> 
+                  <input class="site-search__input" id="searchInput" name="searchInput" type="text" placeholder="Search our website" title="Search our website"> 
+                  <input name="portalId" type="hidden" value="3890348"> 
+                  <input name="language" type="hidden" value=""> 
+                  <button class="site-search__submit ui-icon" type="submit" aria-label="Search"> 
+                   <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M20.71 19.29L17.31 15.9C18.407 14.5025 19.0022 12.7767 19 11C19 9.41775 18.5308 7.87103 17.6518 6.55544C16.7727 5.23984 15.5233 4.21446 14.0615 3.60896C12.5997 3.00346 10.9911 2.84504 9.43928 3.15372C7.88743 3.4624 6.46197 4.22433 5.34315 5.34315C4.22433 6.46197 3.4624 7.88743 3.15372 9.43928C2.84504 10.9911 3.00347 12.5997 3.60897 14.0615C4.21447 15.5233 5.23985 16.7727 6.55544 17.6518C7.87103 18.5308 9.41775 19 11 19C12.7767 19.0022 14.5025 18.407 15.9 17.31L19.29 20.71C19.383 20.8037 19.4936 20.8781 19.6154 20.9289C19.7373 20.9797 19.868 21.0058 20 21.0058C20.132 21.0058 20.2627 20.9797 20.3846 20.9289C20.5064 20.8781 20.617 20.8037 20.71 20.71C20.8037 20.617 20.8781 20.5064 20.9289 20.3846C20.9797 20.2627 21.0058 20.132 21.0058 20C21.0058 19.868 20.9797 19.7373 20.9289 19.6154C20.8781 19.4936 20.8037 19.383 20.71 19.29ZM5 11C5 9.81331 5.3519 8.65327 6.01119 7.66658C6.67047 6.67988 7.60755 5.91085 8.7039 5.45672C9.80026 5.0026 11.0067 4.88378 12.1705 5.11529C13.3344 5.3468 14.4035 5.91824 15.2426 6.75736C16.0818 7.59647 16.6532 8.66557 16.8847 9.82946C17.1162 10.9933 16.9974 12.1997 16.5433 13.2961C16.0892 14.3925 15.3201 15.3295 14.3334 15.9888C13.3467 16.6481 12.1867 17 11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11Z" fill="currentColor"></path> 
+                   </svg> </button> 
+                  <a href="../../../com/sodyo/www/index.html" class="site-search__close ui-icon" role="button" aria-label="Close search window"> 
+                   <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M20.707 4.707a1 1 0 0 0-1.414-1.414L12 10.586 4.707 3.293a1 1 0 0 0-1.414 1.414L10.586 12l-7.293 7.293a1 1 0 1 0 1.414 1.414L12 13.414l7.293 7.293a1 1 0 0 0 1.414-1.414L13.414 12l7.293-7.293z" fill="currentColor" /> 
+                   </svg> </a> 
+                 </form> 
+                </div> 
+                <div class="site-search__results"> 
+                 <div class="site-search__results-block"> 
+                  <div class="site-search__result-template"> 
+                   <div class="site-search__result-title ui-label"></div> 
+                   <div class="site-search__result-desc small-text"></div> 
+                  </div> 
+                  <button class="site-search__more btn btn--fill btn--medium btn--accent">More results</button> 
+                 </div> 
+                </div> 
+               </div> 
+              </div>
+             </div> 
+            </div> 
+            <div class="header__lang"> 
+             <div id="hs_cos_wrapper_header_lang" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <style>
+    .module--header_lang {}
+    .module--header_lang .module__inner {}
+    @media (max-width: 1139px) {
+      .module--header_lang {}
+      .module--header_lang .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--header_lang {}
+      .module--header_lang .module__inner {}
+    }
+  </style> 
+              <div class="module module--header_lang module--lang-select"> 
+               <div class="module__inner"> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="header__buttons"> 
+             <div class="header__buttons__static"> 
+              <div id="hs_cos_wrapper_static_header_buttons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--static_header_buttons {}
+    .module--static_header_buttons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--static_header_buttons {}
+      .module--static_header_buttons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--static_header_buttons {}
+      .module--static_header_buttons .module__inner {}
+    }
+  </style> 
+               <div class="module module--static_header_buttons module--button"> 
+                <div class="module__inner"> 
+                 <div class="inline-items">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--static_header_buttons-1"> Try Sodyo </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+             <div class="header__buttons__overlap"> 
+              <div id="hs_cos_wrapper_overlapping_header_buttons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--overlapping_header_buttons {}
+    .module--overlapping_header_buttons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--overlapping_header_buttons {}
+      .module--overlapping_header_buttons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--overlapping_header_buttons {}
+      .module--overlapping_header_buttons .module__inner {}
+    }
+  </style> 
+               <div class="module module--overlapping_header_buttons module--button"> 
+                <div class="module__inner"> 
+                 <div class="inline-items">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--overlapping_header_buttons-1"> Try Sodyo </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+             <div class="header__buttons__sticky"> 
+              <div id="hs_cos_wrapper_sticky_header_buttons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+               <style>
+    .module--sticky_header_buttons {}
+    .module--sticky_header_buttons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--sticky_header_buttons {}
+      .module--sticky_header_buttons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--sticky_header_buttons {}
+      .module--sticky_header_buttons .module__inner {}
+    }
+  </style> 
+               <div class="module module--sticky_header_buttons module--button"> 
+                <div class="module__inner"> 
+                 <div class="inline-items">
+                  <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--sticky_header_buttons-1"> Try Sodyo </a>
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="header__mobile-nav"> 
+             <div id="hs_cos_wrapper_header_mobile_nav" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+              <style>
+    .module--header_mobile_nav {}
+    .module--header_mobile_nav .module__inner {}
+    @media (max-width: 1139px) {
+      .module--header_mobile_nav {}
+      .module--header_mobile_nav .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--header_mobile_nav {}
+      .module--header_mobile_nav .module__inner {}
+    }
+  </style> 
+              <div class="module module--header_mobile_nav module--mnav"> 
+               <div class="module__inner"> 
+                <div class="mnav mnav--light"> 
+                 <a class="mnav__open ui-icon" href="../../../com/sodyo/www/index.html" role="button" aria-label="Open menu"> 
+                  <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                   <path d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm1 5a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H4z" fill="currentColor" /> 
+                  </svg> </a> 
+                 <div class="mnav__overlay"></div> 
+                 <div class="mnav__popup"> 
+                  <div class="mnav__section mnav__section--first mnav__menu hs-skip-lang-url-rewrite"> 
+                   <ul class="mnav__menu__list mnav__menu__list--level1"> 
+                    <li class="mnav__menu__item mnav__menu__item--parent"> 
+                     <div class="mnav__menu__label"> 
+                      <a class="mnav__menu__link" href="../../../com/sodyo/www/index.html">Resources</a> 
+                      <div class="mnav__menu__toggle" role="button"> 
+                       <div class="mnav__menu__toggle__open-icon"> 
+                        <svg class="mnav__menu__toggle__open" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L12 13.5858L6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                       <div class="mnav__menu__toggle__close-icon"> 
+                        <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                      </div> 
+                     </div> 
+                     <ul class="mnav__menu__list mnav__menu__list--level2 mnav__menu__list--child"> 
+                      <li class="mnav__menu__item"> 
+                       <div class="mnav__menu__label"> 
+                        <a class="mnav__menu__link" href="https://www.sodyo.com/blog">Read our Blog</a> 
+                       </div> </li> 
+                     </ul> </li> 
+                    <li class="mnav__menu__item mnav__menu__item--parent"> 
+                     <div class="mnav__menu__label"> 
+                      <a class="mnav__menu__link" href="../../../com/sodyo/www/index.html">Company</a> 
+                      <div class="mnav__menu__toggle" role="button"> 
+                       <div class="mnav__menu__toggle__open-icon"> 
+                        <svg class="mnav__menu__toggle__open" width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 8.29289C4.90237 8.68342 4.90237 9.31658 5.29289 9.70711L11.2929 15.7071C11.6834 16.0976 12.3166 16.0976 12.7071 15.7071L18.7071 9.70711C19.0976 9.31658 19.0976 8.68342 18.7071 8.29289C18.3166 7.90237 17.6834 7.90237 17.2929 8.29289L12 13.5858L6.70711 8.29289C6.31658 7.90237 5.68342 7.90237 5.29289 8.29289Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                       <div class="mnav__menu__toggle__close-icon"> 
+                        <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                         <path d="M5.29289 15.7071C4.90237 15.3166 4.90237 14.6834 5.29289 14.2929L11.2929 8.29289C11.6834 7.90237 12.3166 7.90237 12.7071 8.29289L18.7071 14.2929C19.0976 14.6834 19.0976 15.3166 18.7071 15.7071C18.3166 16.0976 17.6834 16.0976 17.2929 15.7071L12 10.4142L6.70711 15.7071C6.31658 16.0976 5.68342 16.0976 5.29289 15.7071Z" fill="currentColor" /> 
+                        </svg> 
+                       </div> 
+                      </div> 
+                     </div> 
+                     <ul class="mnav__menu__list mnav__menu__list--level2 mnav__menu__list--child"> 
+                      <li class="mnav__menu__item"> 
+                       <div class="mnav__menu__label"> 
+                        <a class="mnav__menu__link" href="https://www.sodyo.com/contact-us">Contact Us</a> 
+                       </div> </li> 
+                     </ul> </li> 
+                   </ul> 
+                  </div> 
+                  <div class="mnav__section mnav__buttons inline-items inline-items--left">
+                   <a href="https://www.sodyo.com/try-sodyo?hsLang=en" class="btn btn--fill btn--medium btn--accent btn--default  btn--header_mobile_nav-1"> Try Sodyo </a>
+                  </div> 
+                  <a href="../../../com/sodyo/www/index.html" class="mnav__close ui-icon" role="button" aria-label="Open menu"> 
+                   <svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M20.707 4.707a1 1 0 0 0-1.414-1.414L12 10.586 4.707 3.293a1 1 0 0 0-1.414 1.414L10.586 12l-7.293 7.293a1 1 0 1 0 1.414 1.414L12 13.414l7.293 7.293a1 1 0 0 0 1.414-1.414L13.414 12l7.293-7.293z" fill="currentColor" /> 
+                   </svg> </a> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </header> 
+   </div> 
+   <main id="main-content" class="body"> 
+    <div class="container-fluid main"> 
+     <div class="row-fluid-wrapper"> 
+      <div class="row-fluid"> 
+       <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12"> 
+        <div class="row-fluid-wrapper row-depth-1 row-number-1 content_bucket-row-0-force-full-width-section dnd-section content_bucket-row-0-padding"> 
+         <div class="row-fluid "> 
+          <div class="span12 widget-span widget-type-custom_widget dnd-module" style="" data-widget-type="custom_widget" data-x="0" data-w="12"> 
+           <div id="hs_cos_wrapper_content_bucket-module-1" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+            <style>
+    .module--content_bucket-module-1 {}
+    .module--content_bucket-module-1 .module__inner {}
+    @media (max-width: 1139px) {
+      .module--content_bucket-module-1 {}
+      .module--content_bucket-module-1 .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--content_bucket-module-1 {}
+      .module--content_bucket-module-1 .module__inner {}
+    }
+  </style> 
+            <div class="module module--content_bucket-module-1 module--img-txt module--md-text-center"> 
+             <div class="module__inner"> 
+              <div class="img-txt img-txt--light img-txt--ti img-txt--sti img-txt--stacked-txt-center img-txt--stacked-img-center"> 
+               <div class="img-txt__col img-txt__col--txt"> 
+                <div class="img-txt__col-content"> 
+                 <div class="img-txt__txt txt--light clear"> 
+                  <h1>#10 Diego Martinez FC Sodyo Kit</h1> 
+                  <p>Check out the new home kit for your favorite player, #10 Diego Martinez.<br><br>100% polyester<br>Machine wash</p> 
+                 </div> 
+                 <div class="img-txt__btn inline-items inline-items--md-center"></div> 
+                </div> 
+               </div> 
+               <div class="img-txt__col img-txt__col--img"> 
+                <div class="img-txt__col-content"> 
+                 <img src="https://www.sodyo.com/hs-fs/hubfs/iStock-1385826808.jpg?width=724&amp;height=483&amp;name=iStock-1385826808.jpg" alt="iStock-1385826808" srcset="https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=360&amp;name=iStock-1385826808.jpg 360w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=480&amp;name=iStock-1385826808.jpg 480w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=720&amp;name=iStock-1385826808.jpg 720w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=768&amp;name=iStock-1385826808.jpg 768w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=1350&amp;name=iStock-1385826808.jpg 1350w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=1440&amp;name=iStock-1385826808.jpg 1440w, https://3890348.fs1.hubspotusercontent-na1.net/hub/3890348/hubfs/iStock-1385826808.jpg?width=1448&amp;name=iStock-1385826808.jpg 1448w" width="724" height="483" loading="lazy" class="img--radius "> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <style>
+@media (max-width: 1139px) {
+  
+  .module--content_bucket-module-1 .img-txt__col--txt {
+    max-width: 500px;
+  }
+  
+  
+  .module--content_bucket-module-1 .img-txt__col--img {
+    max-width: 850px;
+  }
+  
+}
+</style>
+           </div> 
+          </div>
+          <!--end widget-span --> 
+         </div>
+         <!--end row--> 
+        </div>
+        <!--end row-wrapper --> 
+       </div>
+       <!--end widget-span --> 
+      </div> 
+     </div> 
+    </div> 
+   </main> 
+   <div data-global-resource-path="Act3 Sodyo/partials/footer-11.html"> 
+    <footer class="footer footer--11 hs-search-hidden"> 
+     <div class="footer__section footer__section--main section"> 
+      <div class="footer__center container"> 
+       <div class="row"> 
+        <div class="col s4 md-s12"> 
+         <div class="footer__about"> 
+          <div id="hs_cos_wrapper_footer_about" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+           <style>
+    .module--footer_about {margin-bottom: 24px;}
+    .module--footer_about .module__inner {width: 320px;}
+    @media (max-width: 1139px) {
+      .module--footer_about {}
+      .module--footer_about .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_about {}
+      .module--footer_about .module__inner {}
+    }
+  </style> 
+           <div class="module module--footer_about module--rtext module--md-block-center module--md-text-center"> 
+            <div class="module__inner"> 
+             <div id="rtext__footer_about" class="rtext rtext--box-none txt--light txt--light"> 
+              <div class="rtext__content clear small-text"> 
+               <h4>About Sodyo</h4> 
+               <p>Sodyo's revolutionary new scanning technology can be used nearly everywhere on almost anything. If you can see it, you can scan it, in the most futuristic user experience on the market today.</p> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="footer__icons"> 
+          <div id="hs_cos_wrapper_footer_icons" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+           <style>
+    .module--footer_icons {margin-bottom: 30px;}
+    .module--footer_icons .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_icons {margin-bottom: 50px;}
+      .module--footer_icons .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_icons {}
+      .module--footer_icons .module__inner {}
+    }
+  </style> 
+           <div class="module module--footer_icons module--icon module--md-text-center"> 
+            <div class="module__inner"> 
+             <div class="inline-items inline-items--md-center" style="gap: 30px;">
+              <a href="https://www.youtube.com/channel/UCYrdizFxW9y4n3A6hDHE8sw?sub_confirmation=1" target="_blank"><span class="icon icon--footer_icons-1 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 576 512" aria-hidden="true">
+                  <g id="YouTube1_layer">
+                   <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text"></span> </span></a>
+              <a href="https://www.linkedin.com/company/3295996" target="_blank"><span class="icon icon--footer_icons-2 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" aria-hidden="true">
+                  <g id="LinkedIn2_layer">
+                   <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text">Join us on Slack</span> </span></a>
+              <a href="https://www.facebook.com/1026710320674540" target="_blank"><span class="icon icon--footer_icons-3 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                  <g id="Facebook3_layer">
+                   <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text">Browse our GitHub projects</span> </span></a>
+              <a href="https://twitter.com/SodyoO2O" target="_blank"><span class="icon icon--footer_icons-4 icon--type-icon icon--large icon--accent"> <span class="icon__glyph"> 
+                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
+                  <g id="Twitter4_layer">
+                   <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                  </g>
+                 </svg> </span> <span class="screen-reader-text">Read our Twitter feed</span> </span></a>
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+        <div class="col s8 md-s12"> 
+         <div class="footer__nav"> 
+          <div id="hs_cos_wrapper_footer_nav" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+           <style>
+    .module--footer_nav {}
+    .module--footer_nav .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_nav {}
+      .module--footer_nav .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_nav {}
+      .module--footer_nav .module__inner {width: 400px;}
+    }
+  </style> 
+           <div class="module module--footer_nav module--col-nav module--block-right module--sm-block-center module--sm-text-center"> 
+            <div class="module__inner"> 
+             <div class="col-nav col-nav--light"> 
+              <div class="row justify-end"> 
+               <div class="col s4 md-s4 sm-s6"> 
+                <div class="box"> 
+                 <div class="col-nav__col"> 
+                  <div class="col-nav__title">
+                   <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank">Resources</a>
+                  </div> 
+                  <ul class="col-nav__list"> 
+                   <li class="col-nav__item"> <a href="https://www.sodyo.com/blog?hsLang=en" class="col-nav__link ">Read our Blog</a> </li> 
+                   <li class="col-nav__item"> <a href="https://www.sodyo.com/try-sodyo?hsLang=en" target="_blank" class="col-nav__link ">Try Sodyo</a> </li> 
+                   <li class="col-nav__item"> <a href="https://www.sodyo.com/contact-us?hsLang=en" target="_blank" class="col-nav__link ">Contact Us</a> </li> 
+                  </ul> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="footer__section footer__section--bottom section"> 
+      <div class="footer__center container"> 
+       <div class="row"> 
+        <div class="col s12"> 
+         <div class="footer__legal"> 
+          <div class="flex flex-row items-center justify-between sm-flex-col sm-items-stretch"> 
+           <div class="footer__copyright"> 
+            <div id="hs_cos_wrapper_footer_copyright" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+             <style>
+    .module--footer_copyright {}
+    .module--footer_copyright .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_copyright {}
+      .module--footer_copyright .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_copyright {margin-bottom: 24px;}
+      .module--footer_copyright .module__inner {}
+    }
+  </style> 
+             <div class="module module--footer_copyright module--rtext module--sm-text-center"> 
+              <div class="module__inner"> 
+               <div id="rtext__footer_copyright" class="rtext rtext--box-none txt--light txt--light"> 
+                <div class="rtext__content clear small-text">
+                  Copyright © 2022 Sodyo, Ltd. 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+           <div class="footer__links"> 
+            <div id="hs_cos_wrapper_footer_links" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"> 
+             <style>
+    .module--footer_links {}
+    .module--footer_links .module__inner {}
+    @media (max-width: 1139px) {
+      .module--footer_links {}
+      .module--footer_links .module__inner {}
+    }
+    @media (max-width: 767px) {
+      .module--footer_links {}
+      .module--footer_links .module__inner {}
+    }
+  </style> 
+             <div class="module module--footer_links module--rtext module--text-right module--sm-text-center"> 
+              <div class="module__inner"> 
+               <div id="rtext__footer_links" class="rtext rtext--box-none txt--light txt--light"> 
+                <div class="rtext__content clear small-text"> 
+                 <ul> 
+                  <li><a href="#">Terms</a></li> 
+                  <li><a href="#">Privacy</a></li> 
+                 </ul> 
+                </div> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </footer> 
+   </div> 
+  </div> 
+  <script src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445519408/1652326468797/Act3_Sodyo/js/main.min.js"></script> 
+  <script src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52446050851/1650794963094/Act3_Sodyo/child.min.js"></script> 
+  <script defer src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445484453/1652326458181/Act3_Sodyo/js/components/lightbox.min.js"></script> 
+  <script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script> 
+  <script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script> 
+  <script defer src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52444303727/1652326460722/Act3_Sodyo/js/components/nav.min.js"></script> 
+  <script src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445475586/1652326455421/Act3_Sodyo/js/components/site-search.min.js"></script> 
+  <script src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445616391/1652326461419/Act3_Sodyo/js/components/lang-select.min.js"></script> 
+  <script src="https://www.sodyo.com/hs-fs/hub/3890348/hub_generated/template_assets/52445563989/1652326457132/Act3_Sodyo/js/components/mobile-nav.min.js"></script> 
+  <!-- Start of HubSpot Analytics Code Not Loaded --> 
+  <script>
+(function(){
+  const timeoutEvent = document.createEvent('CustomEvent');
+  timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+  window.dispatchEvent(timeoutEvent);
+})();
+</script> 
+  <!-- End of HubSpot Analytics Code Not Loaded --> 
+  <script type="text/javascript">
+var hsVars = {
+    ticks: 1658329105773,
+    page_id: 74841591991,
+    
+    content_group_id: 0,
+    portal_id: 3890348,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "74841591991",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: null
+}
+</script> 
+  <script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.128/js/index.js"></script> 
+ </body>
+</html>
